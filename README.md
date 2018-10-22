@@ -29,4 +29,6 @@ Main libraries used: **Tensorflow**, **Keras**, **CatBoost**,
 *  **[Text Summarization Prototype](https://github.com/gmihaila/machine_learning_toolbox/blob/master/text_sum_no_generator.ipynb)** using Sequence To Sequence architecture with actual data.
 *  **[Neural Network Keras vanila implementation](https://github.com/gmihaila/machine_learning_toolbox/blob/master/vanila_nn.ipynb)**. Toy example with actual data.
 *  **[Word Embedding](https://github.com/gmihaila/machine_learning_toolbox/blob/master/word_embeddings_visualize.ipynb)*** How to load and plot using PCA.
+*  **[Label Encoding](https://github.com/gmihaila/machine_learning_toolbox/blob/master/label_encoding.ipynb)***
+How to easily perform label encoding.
 *  []()
