@@ -25,10 +25,11 @@ Main libraries used: **Tensorflow**, **Keras**, **CatBoost**,
 *  **[Keras Generator](https://github.com/gmihaila/machine_learning_toolbox/blob/master/keras_generator.ipynb)** use when dealing with Big Data. How to plug it to a Deep Learning model.
 *  **[Keras Time Distribution](https://github.com/gmihaila/machine_learning_toolbox/blob/master/keras_time_distribution.ipynb)** Explanation oh how it works and when to use it.
 *  **[Keras Tokenizer](https://github.com/gmihaila/machine_learning_toolbox/blob/master/keras_tokenizer_fix.ipynb)** Example of how to use it and fix the bug.
+*  **[Keras Multi GPU](https://github.com/gmihaila/machine_learning_toolbox/blob/master/kera_multi_gpu.ipynb)** Example of how to use GPUs to train your modle in keras.
 *  **[Sequesnce To Sequence](https://github.com/gmihaila/machine_learning_toolbox/blob/master/seq2seq_translator.ipynb)** model. Implementation for translation.
 *  **[Text Summarization Prototype](https://github.com/gmihaila/machine_learning_toolbox/blob/master/text_sum_no_generator.ipynb)** using Sequence To Sequence architecture with actual data.
 *  **[Neural Network Keras vanila implementation](https://github.com/gmihaila/machine_learning_toolbox/blob/master/vanila_nn.ipynb)**. Toy example with actual data.
+*  **[T-pot](https://github.com/gmihaila/machine_learning_toolbox/blob/master/tpot_auto_ml.ipynb)**. - Auto Machine Learning libary.
 *  **[Word Embedding](https://github.com/gmihaila/machine_learning_toolbox/blob/master/word_embeddings_visualize.ipynb)*** How to load and plot using PCA.
-*  **[Label Encoding](https://github.com/gmihaila/machine_learning_toolbox/blob/master/label_encoding.ipynb)***
-How to easily perform label encoding.
+
 *  []()
