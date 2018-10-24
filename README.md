@@ -20,6 +20,7 @@ Main libraries used: **Tensorflow**, **Keras**, **CatBoost**,
 *  **[Cat Boost](https://github.com/gmihaila/deep_learning_toolbox/blob/master/cat_boost.ipynb)** implementation.
 *  **[Check GPU](https://github.com/gmihaila/machine_learning_toolbox/blob/master/check_gpu.ipynb)** in Tensorflow.
 *  **[Cuda Setup](https://github.com/gmihaila/machine_learning_toolbox/blob/master/cuda_setup.md)** guide.
+*  **[Data Label Encoding](https://github.com/gmihaila/machine_learning_toolbox/blob/master/label_encoding.ipynb)**  for categorical data.
 *  **[Keras Checkpoints](https://github.com/gmihaila/machine_learning_toolbox/blob/master/keras_checkpoins.ipynb)** to do callbacks when training large Deep Learning models.
 *  **[Keras embedding layer](https://github.com/gmihaila/machine_learning_toolbox/blob/master/keras_embedding.ipynb)** How it works and how to add it to your Deep Learning Model.
 *  **[Keras Generator](https://github.com/gmihaila/machine_learning_toolbox/blob/master/keras_generator.ipynb)** use when dealing with Big Data. How to plug it to a Deep Learning model.
