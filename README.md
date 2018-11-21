@@ -32,4 +32,8 @@ Main libraries used: **Tensorflow**, **Keras**, **CatBoost**,
 *  **[Neural Network Keras vanila implementation](https://github.com/gmihaila/machine_learning_toolbox/blob/master/vanila_nn.ipynb)**. Toy example with actual data.
 *  **[T-pot](https://github.com/gmihaila/machine_learning_toolbox/blob/master/tpot_auto_ml.ipynb)**. - Auto Machine Learning libary.
 *  **[Word Embedding](https://github.com/gmihaila/machine_learning_toolbox/blob/master/word_embeddings_visualize.ipynb)** How to load and plot using PCA.
+*  **[wget google drive](https://github.com/gmihaila/machine_learning_toolbox/blob/master/wget_google_drive.ipynb)** Download any zip file from google drive using wget.
+
+
+
 
