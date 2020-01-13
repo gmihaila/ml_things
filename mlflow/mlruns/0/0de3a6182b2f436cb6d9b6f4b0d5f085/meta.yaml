@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/georgemihaila/Documents/python/machine_learning_things/mlflow/mlruns/0/0de3a6182b2f436cb6d9b6f4b0d5f085/artifacts
+end_time: 1578927491976
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 0de3a6182b2f436cb6d9b6f4b0d5f085
+run_uuid: 0de3a6182b2f436cb6d9b6f4b0d5f085
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1578927485000
+status: 3
+tags: []
+user_id: georgemihaila
