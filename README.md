@@ -1,4 +1,4 @@
-## Contains things I find usefull in my Mahcine Learning work flow
+## Contains things I find usefull in my Mahcine Learning work
 
 
 </br>
