@@ -37,3 +37,14 @@ def custom_logger(file_log, filemode='a', date_format="%m-%d-%Y_%H:%M:%S"):
 ```python
 logger = custom_logger(file_log="file.log", filemode='w')
 ```
+
+## Snippets:
+
+### Log
+```python
+try:
+    assert 1 == 0 
+except AssertionError as err:
+    logger.exception("My assert failed :( ")
+    raise err
+```
