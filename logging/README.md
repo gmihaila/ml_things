@@ -22,7 +22,7 @@ def custom_logger(file_log, filemode='a', date_format="%m-%d-%Y_%H:%M:%S"):
     # logger format
     logger_print_format = "%(asctime)s - %(levelname)s - %(filename)s/%(funcName)s: %(message)s"
     # define file handler and set formatter
-    file_handler = logging.FileHandler(file_log)
+    file_handler = logging.FileHandler(file_log, mode=filemode)
     file_handler.setFormatter(logging.Formatter(logger_print_format, datefmt=date_format))
     # setup logger config
     logging.basicConfig(format=logger_print_format, datefmt=date_format, level=logging.INFO, filemode=filemode)
