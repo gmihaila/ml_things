@@ -40,7 +40,7 @@ logger = custom_logger(file_log="file.log", filemode='w')
 
 ## Snippets:
 
-### Log
+### assertion log
 ```python
 try:
     assert 1 == 0 
@@ -48,3 +48,4 @@ except AssertionError as err:
     logger.exception("My assert failed :( ")
     raise err
 ```
+
