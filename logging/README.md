@@ -40,7 +40,29 @@ logger = custom_logger(file_log="file.log", filemode='w')
 
 ## Snippets:
 
-### assertion log
+### common examples
+```python
+logger.info("my info")
+logger.warning("this is a warning")
+
+logger.debug('A debug message')
+logger.info('An info message')
+logger.warning('Something is not right.')
+logger.error('A Major error has happened.')
+logger.critical('Fatal error. Cannot continue')
+```
+
+
+### exceptions log
+
+```python
+try:
+  1 / 0
+except ZeroDivisionError:
+  logger.exception("Division by zero problem")
+return
+```
+
 ```python
 try:
     assert 1 == 0 
