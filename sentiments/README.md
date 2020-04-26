@@ -9,6 +9,10 @@ positive_words = io.open("/path/to/positive-words.txt", encoding='UTF-8').read()
 negative_words = io.open("/path/to/negative-words.txt", encoding='UTF-8').read().strip().split('\n')
 ```
 
+### Words Counts:
+* Positive: `2,006` words.
+* Negative: `4,783` words
+
 ### This is borrowed from [shekhargulati
 /
 sentiment-analysis-python](https://github.com/shekhargulati/sentiment-analysis-python)
