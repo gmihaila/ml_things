@@ -13,9 +13,7 @@ negative_words = io.open("/path/to/negative-words.txt", encoding='UTF-8').read()
 * Positive: `2,006` words.
 * Negative: `4,783` words
 
-### This is borrowed from (shekhargulati
-/
-sentiment-analysis-python)[https://github.com/shekhargulati/sentiment-analysis-python]
+### This is borrowed from [shekhargulati/sentiment-analysis-python](https://github.com/shekhargulati/sentiment-analysis-python)
 
 * These files contains a list of POSITIVE and NEGATIVE opinion words (or sentiment words).
 
