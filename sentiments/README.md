@@ -1,6 +1,15 @@
 ## Opinion Lexicon: Positive & Negative
 
-This is borrowed from [shekhargulati
+### Python Snippet:
+
+```python
+Import io
+
+positive_words = io.open("/path/to/positive-words.txt", encoding='UTF-8').read().strip().split('\n')
+negative_words = io.open("/path/to/negative-words.txt", encoding='UTF-8').read().strip().split('\n')
+```
+
+### This is borrowed from [shekhargulati
 /
 sentiment-analysis-python](https://github.com/shekhargulati/sentiment-analysis-python)
 
