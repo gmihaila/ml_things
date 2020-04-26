@@ -1,5 +1,9 @@
 ## Opinion Lexicon: Positive & Negative
 
+This is borrowed from [shekhargulati
+/
+sentiment-analysis-python](https://github.com/shekhargulati/sentiment-analysis-python)
+
 * These files contains a list of POSITIVE and NEGATIVE opinion words (or sentiment words).
 
 * These files and the papers can all be downloaded from 
@@ -28,3 +32,4 @@
   * You will notice many misspelled words in the list. They are not 
     mistakes. They are included as these misspelled words appear 
     frequently in social media content. 
+
