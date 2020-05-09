@@ -1,19 +1,55 @@
-## Opinion Lexicon: Positive & Negative
+## Sentiments: Positive & Negative
 
-### Python Snippet:
+## Imports
 
 ```python
-Import io
-
-positive_words = io.open("/path/to/positive-words.txt", encoding='UTF-8').read().strip().split('\n')
-negative_words = io.open("/path/to/negative-words.txt", encoding='UTF-8').read().strip().split('\n')
+import io
+import os
+import requests
 ```
 
-### Counts:
+## Function
+
+```python
+def positive_negative_words(path=".sentiments"):
+    """Download positive and negative files and return list of positive and negative words.
+    Args:
+        path: Temporary path to save sentiment files
+
+    Returns:
+        positive_words: List of positive words.
+        negative_words: List of negative words.
+    """
+    # files download urls
+    positive_url = "https://raw.githubusercontent.com/gmihaila/machine_learning_things/master/sentiments/positive-words.txt"
+    negative_url = "https://raw.githubusercontent.com/gmihaila/machine_learning_things/master/sentiments/negative-words.txt"
+    # build path
+    os.makedirs(path) if not os.path.isdir(path) else None
+    # create file paths
+    positive_path = os.path.join(path, "positive-words.txt")
+    negative_path = os.path.join(path, "negative-words.txt")
+    # download files
+    open(positive_path, 'wb').write(requests.get(positive_url).content) if not os.path.isfile(positive_path) else None
+    open(negative_path, 'wb').write(requests.get(negative_url).content) if not os.path.isfile(negative_path) else None
+    # read file
+    positive_words = io.open(positive_path, encoding='UTF-8').read().strip().split('\n')
+    negative_words = io.open(negative_path, encoding='UTF-8').read().strip().split('\n')
+
+    return positive_words, negative_words
+```
+
+## Use Function
+
+```python
+positive_words, negative_words = positive_negative_words()
+```
+<br>
+
+## Details:
 * Positive: `2,006` words.
 * Negative: `4,783` words
 
-### Files are borrowed from [shekhargulati/sentiment-analysis-python](https://github.com/shekhargulati/sentiment-analysis-python)
+* Files are borrowed from [shekhargulati/sentiment-analysis-python](https://github.com/shekhargulati/sentiment-analysis-python)
 
 * These files contains a list of POSITIVE and NEGATIVE opinion words (or sentiment words).
 
@@ -31,7 +67,7 @@ negative_words = io.open("/path/to/negative-words.txt", encoding='UTF-8').read()
         International World Wide Web conference (WWW-2005), May 10-14, 
         2005, Chiba, Japan.
  
-#### Notes:
+## Notes:
   * The appearance of an opinion word in a sentence does not necessarily  
     mean that the sentence expresses a positive or negative opinion. 
     See the paper below:
