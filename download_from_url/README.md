@@ -11,18 +11,23 @@ import requests
 
 ```python
 def download_from(url, path):
-  file_name = os.path.basename(url)
+    """Download file from url.
+    Args:
+        url: Url to file.
+        path: Path to save file
 
-  os.makedirs(path) if not os.path.isdir(path) else None
-
-  file_path = os.path.join(path, file_name)
-
-  if not os.path.isfile(file_path):
-    response = requests.get(url)
-    file_size = open(file_path, 'wb').write(response.content)
-    file_size = '{0:.2f}MB'.format(file_size/1024)
-    print("%s %s" % (file_path, file_size))
-  return file_path
+    Returns:
+        file_path: path where file is saved.
+    """
+    file_name = os.path.basename(url)
+    os.makedirs(path) if not os.path.isdir(path) else None
+    file_path = os.path.join(path, file_name)
+    if not os.path.isfile(file_path):
+        response = requests.get(url)
+        file_size = open(file_path, 'wb').write(response.content)
+        file_size = '{0:.2f}MB'.format(file_size / 1024)
+        print("%s %s" % (file_path, file_size))
+    return file_path
 ```
 
 ## Use Function:
