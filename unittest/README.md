@@ -3,7 +3,7 @@
 * Make sure to keep the unit testing code in a separate file with name `test_` in front of the `.py` script.
 * When writing code that needs testing make sure you raise any `TypeError` or `ValueError` or other types of errors associated with the fucntions input values (if any).
 
-## Example
+## Example using `.py` script
 
 ### Code script
 
@@ -67,4 +67,49 @@ OK
 ```
 
 The `OK` tells us everything went well! The `3 tests` are represented by the number of testing fucntions written in `test_subtract.py`
+
+
+## Example using `.ipynb` jupyter notebook
+
+### A notebook cell with a function:
+
+```python
+def add(a, b):
+    return a + b
+```
+
+### A notebook cell (the last one in the notebook) that contains a test case. The last line in the cell runs the test case when the cell is executed:
+
+```python
+import unittest
+
+class TestNotebook(unittest.TestCase):
+
+    def test_add(self):
+        self.assertEqual(add(2, 2), 5)
+
+
+unittest.main(argv=[''], verbosity=2, exit=False)
+```
+
+### Output:
+
+```bash
+test_add (__main__.TestNotebook) ... FAIL
+
+======================================================================
+FAIL: test_add (__main__.TestNotebook)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<ipython-input-15-4409ad9ffaea>", line 6, in test_add
+    self.assertEqual(add(2, 2), 5)
+AssertionError: 4 != 5
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+```
+
+
 
