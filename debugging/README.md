@@ -3,7 +3,7 @@
 To set debugging:
 
 ```python
-import pdb; pdb.set_trace()
+import pdb; pdb.set_trace() #<---------DEBUGGING---------------
 ```
 
 For example:
@@ -15,6 +15,6 @@ def add(a, b):
     >>> add(2, 2)
     5
     '''
-    import pdb; pdb.set_trace()
+    import pdb; pdb.set_trace() #<---------DEBUGGING---------------
     return a + b
 ```
