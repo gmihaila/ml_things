@@ -74,7 +74,7 @@ def pad_numpy(variable_length_array, fixed_length=None, axis=1):
 
     # array of values
     elif isinstance(variable_length_array, list) or isinstance(
-        variable_length_array, np.ndarray)::
+        variable_length_array, np.ndarray):
 
       if axis == 1:
         # perform pading on rows
