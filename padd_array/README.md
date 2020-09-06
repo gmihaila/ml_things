@@ -49,7 +49,8 @@ def pad_numpy(variable_length_array, fixed_length=None, axis=1):
     fixed_length = max([len(row) for row in variable_length_array]) if fixed_length is None else fixed_length
 
     # array of arrays
-    if isinstance(variable_length_array[0], list):
+    if isinstance(variable_length_array[0], list) or isinstance(
+        variable_length_array[0], np.ndarray):
 
       if axis == 1:
         # perform pading on rows
@@ -72,7 +73,8 @@ def pad_numpy(variable_length_array, fixed_length=None, axis=1):
       return numpy_array
 
     # array of values
-    elif isinstance(variable_length_array, list):
+    elif isinstance(variable_length_array, list) or isinstance(
+        variable_length_array, np.ndarray)::
 
       if axis == 1:
         # perform pading on rows
