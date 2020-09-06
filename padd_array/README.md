@@ -67,8 +67,13 @@ def pad_numpy(variable_length_array, fixed_length=None, axis=1):
                     for row in variable_length_array]):
           raise ValueError("`variable_length_array` need to have same row length for column padding `axis=0`!")
         # padding on columns
-        numpy_array = np.zeros((fixed_length, len(variable_length_array[0])))
-        numpy_array[:len(variable_length_array)] = variable_length_array
+        if fixed_length >= len(variable_length_array):
+          # need to padd
+          numpy_array = np.zeros((fixed_length, len(variable_length_array[0])))
+          numpy_array[:len(variable_length_array)] = variable_length_array
+        else:
+          # need to cut array
+          numpy_array = np.array(variable_length_array[:fixed_length])
 
       return numpy_array
 
