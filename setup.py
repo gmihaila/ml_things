@@ -3,11 +3,12 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-requirements = ["ipython>=6", "nbformat>=4", "nbconvert>=5", "requests>=2"]
+requirements = []
 
 setup(
     name="ml_things",
     version="0.0.1",
+    scripts=['ml_things'],
     author="George Mihaila",
     author_email="georgemihaila@my.unt.edu",
     description="A package to keep all helping functions used in Machine Learning together",
@@ -18,6 +19,6 @@ setup(
     install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3.7",
-        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "License :: MIT License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     ],
 )
