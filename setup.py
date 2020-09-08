@@ -1,5 +1,5 @@
 """
-Heavly inspired from https://github.com/huggingface/transformers
+Heavily inspired from https://github.com/huggingface/transformers
 
 Simple check list from AllenNLP repo: https://github.com/allenai/allennlp/blob/master/setup.py
 

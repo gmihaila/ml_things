@@ -37,3 +37,10 @@ pip install git+https://github.com/gmihaila/ml_things
 
 ## Functions
 
+
+```python
+pad_array(variable_length_array, fixed_length=None, axis=1)
+```
+
+Pad variable length array to a fixed numpy array.
+It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
