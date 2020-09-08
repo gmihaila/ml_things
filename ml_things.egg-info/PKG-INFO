@@ -19,5 +19,5 @@ Description: ## Contains things I find usefull in my Mahcine Learning work
         
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.7
-Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: MIT License :: OSI Approved :: GNU General Public License v3 (GPLv3)
 Description-Content-Type: text/markdown

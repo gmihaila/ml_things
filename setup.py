@@ -8,7 +8,6 @@ requirements = []
 setup(
     name="ml_things",
     version="0.0.1",
-    scripts=['ml_things'],
     author="George Mihaila",
     author_email="georgemihaila@my.unt.edu",
     description="A package to keep all helping functions used in Machine Learning together",
