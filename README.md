@@ -37,10 +37,30 @@ pip install git+https://github.com/gmihaila/ml_things
 
 ## Functions
 
+### pad_array
 
-```python
-pad_array(variable_length_array, fixed_length=None, axis=1)
-```
+`def pad_array(variable_length_array, fixed_length=None, axis=1)` [[source]](https://github.com/gmihaila/ml_things/blob/6a4e345a5d26b9c8caeb76f5cca30d42c1a1b2a4/src/ml_things/padding.py#L20)
+
 
 Pad variable length array to a fixed numpy array.
 It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
+
+Parameters:
+  variable_length_array: Single arrays [1,2,3] or nested arrays [[1,2],[3]].
+
+  fixed_length: max length of rows for numpy.
+
+  axis: directions along rows: 1 or columns: 0
+:return:
+  numpy_array:  axis=1: fixed numpy array shape [len of array, fixed_length].
+                axis=0: fixed numpy array shape [fixed_length, len of array].
+
+```python
+>>> from ml_things import pad_array
+
+>>> pad_array(variable_length_array=[[1,2],[3],[4,5,6]], fixed_length=5)
+
+array([[1., 2., 0., 0., 0.],
+       [3., 0., 0., 0., 0.],
+       [4., 5., 6., 0., 0.]])
+```
