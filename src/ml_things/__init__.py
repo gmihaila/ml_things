@@ -5,5 +5,5 @@
 __version__ = "0.0.1"
 
 # functions
-from .ml_things import convert
-from .padding import pad_array
+from .array_functions import (padding,
+                              batching)

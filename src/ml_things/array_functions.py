@@ -12,12 +12,13 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""Padding lists in Python to even length Numpy array"""
+"""Functions that are used on array like variables/objects"""
 
 import numpy as np
+import warnings
 
 
-def pad_array(variable_length_array, fixed_length=None, axis=1):
+def padding(variable_length_array, fixed_length=None, axis=1):
     """Pad variable length array to a fixed numpy array.
     It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
 
@@ -30,20 +31,6 @@ def pad_array(variable_length_array, fixed_length=None, axis=1):
     :return:
       numpy_array:  axis=1: fixed numpy array shape [len of array, fixed_length].
                     axis=0: fixed numpy array shape [fixed_length, len of array].
-
-    :doctest
-    >>> pad_numpy([1,2,3], 2, 0)
-    array([[1., 2., 3.],
-           [0., 0., 0.]])
-    >>> pad_numpy([[1,2],[3,4]], 3, 0)
-    array([[1., 2.],
-           [3., 4.],
-           [0., 0.]])
-    >>> pad_numpy([1,2,3], 2, 1)
-    array([1., 2.])
-    >>> pad_numpy([[1,2],[3,4]], 3, 1)
-    array([[1., 2., 0.],
-           [3., 4., 0.]])
     """
 
     if axis not in [1, 0]:
@@ -103,3 +90,36 @@ def pad_array(variable_length_array, fixed_length=None, axis=1):
     else:
         # array is not a valid format
         raise ValueError("`variable_length_array` is not a valid format.")
+
+
+def batching(list_values, batch_size):
+    """Split a list into batches/chunks. Last batch size is remaining of list values.
+
+    :param list_values: can be any kind of list/array.
+    :param batch_size: int value of the batch length.
+    :return: List of bacthes from list_values.
+
+    Note:
+      This is also called chunking. I call it batches since I use it more in ML.
+    """
+
+    if isinstance(list_values, list) or isinstance(list_values, np.ndarray):
+        # make sure to warn user if `list_value` has correct type
+
+        if len(list_values) < batch_size:
+            # make sure batch size is not greater than length of list
+            warnings.warn("`batch_size` is greater than length of `list_values`!")
+
+            return [list_values]
+
+        # create new list of batches
+        batched_list = [list_values[i * batch_size:(i + 1) * batch_size] for i in
+                        range((len(list_values) + batch_size - 1) // batch_size)]
+
+        return batched_list
+
+    else:
+        # raise error if `list_values` is not of type array
+        raise ValueError("`list_values` must be of type list!")
+
+        return
