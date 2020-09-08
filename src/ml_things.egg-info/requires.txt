@@ -1,3 +1,0 @@
-numpy
-requests
-tqdm>=4.27

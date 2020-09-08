@@ -1,9 +1,0 @@
-README.md
-ml_things
-setup.py
-ml_things/__init__.py
-ml_things/ml_things.py
-ml_things.egg-info/PKG-INFO
-ml_things.egg-info/SOURCES.txt
-ml_things.egg-info/dependency_links.txt
-ml_things.egg-info/top_level.txt

@@ -1,9 +1,0 @@
-README.md
-setup.py
-ml_things/__init__.py
-ml_things/ml_things.py
-notebookc.egg-info/PKG-INFO
-notebookc.egg-info/SOURCES.txt
-notebookc.egg-info/dependency_links.txt
-notebookc.egg-info/requires.txt
-notebookc.egg-info/top_level.txt
