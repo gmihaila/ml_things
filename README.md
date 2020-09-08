@@ -28,7 +28,7 @@ pip install git+https://github.com/gmihaila/ml_things
 
 ## Functions
 
-### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/6a4e345a5d26b9c8caeb76f5cca30d42c1a1b2a4/src/ml_things/padding.py#L20)
+### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/d18728fba08640d7f1bc060e299e4d4e84814a25/src/ml_things/array_functions.py#L21)
 
 ```python
 def pad_array(variable_length_array, fixed_length=None, axis=1)
@@ -46,4 +46,10 @@ Example:
 array([[1., 2., 0., 0., 0.],
        [3., 0., 0., 0., 0.],
        [4., 5., 6., 0., 0.]])
+```
+
+### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/d18728fba08640d7f1bc060e299e4d4e84814a25/src/ml_things/array_functions.py#L98)
+
+```python
+def batch_array(list_values, batch_size)
 ```
