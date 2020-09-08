@@ -18,7 +18,7 @@ import numpy as np
 import warnings
 
 
-def padding(variable_length_array, fixed_length=None, axis=1):
+def pad_array(variable_length_array, fixed_length=None, axis=1):
     """Pad variable length array to a fixed numpy array.
     It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
 
@@ -33,6 +33,9 @@ def padding(variable_length_array, fixed_length=None, axis=1):
                     axis=0: fixed numpy array shape [fixed_length, len of array].
     """
 
+    # padded array in numpy format
+    numpy_array = None
+
     if axis not in [1, 0]:
         # axis value is wrong
         raise ValueError("`axis` value needs to be 1 for row padding \
@@ -46,7 +49,7 @@ def padding(variable_length_array, fixed_length=None, axis=1):
             variable_length_array[0], np.ndarray):
 
         if axis == 1:
-            # perform pading on rows
+            # perform padding on rows
             numpy_array = np.zeros((len(variable_length_array), fixed_length))
             # verify each row
             for numpy_row, array_row in zip(numpy_array, variable_length_array):
@@ -56,12 +59,12 @@ def padding(variable_length_array, fixed_length=None, axis=1):
 
         elif axis == 0:
             # make sure all rows have same length
-            if not all([len(row) == len(variable_length_array[0]) \
+            if not all([len(row) == len(variable_length_array[0])
                         for row in variable_length_array]):
                 raise ValueError("`variable_length_array` need to have same row length for column padding `axis=0`!")
             # padding on columns
             if fixed_length >= len(variable_length_array):
-                # need to padd
+                # need to pad
                 numpy_array = np.zeros((fixed_length, len(variable_length_array[0])))
                 numpy_array[:len(variable_length_array)] = variable_length_array
             else:
@@ -75,7 +78,7 @@ def padding(variable_length_array, fixed_length=None, axis=1):
             variable_length_array, np.ndarray):
 
         if axis == 1:
-            # perform pading on rows
+            # perform padding on rows
             numpy_array = np.zeros(fixed_length)
             variable_length_array = variable_length_array[:fixed_length]
             numpy_array[:len(variable_length_array)] = variable_length_array
@@ -92,12 +95,12 @@ def padding(variable_length_array, fixed_length=None, axis=1):
         raise ValueError("`variable_length_array` is not a valid format.")
 
 
-def batching(list_values, batch_size):
+def batch_array(list_values, batch_size):
     """Split a list into batches/chunks. Last batch size is remaining of list values.
 
     :param list_values: can be any kind of list/array.
     :param batch_size: int value of the batch length.
-    :return: List of bacthes from list_values.
+    :return: List of batches from list_values.
 
     Note:
       This is also called chunking. I call it batches since I use it more in ML.
@@ -121,5 +124,3 @@ def batching(list_values, batch_size):
     else:
         # raise error if `list_values` is not of type array
         raise ValueError("`list_values` must be of type list!")
-
-        return
