@@ -6,14 +6,14 @@ with open("README.md", "r") as readme_file:
 requirements = ["ipython>=6", "nbformat>=4", "nbconvert>=5", "requests>=2"]
 
 setup(
-    name="notebookc",
+    name="ml_things",
     version="0.0.1",
-    author="Jeff Hale",
-    author_email="jeffmshale@gmail.com",
-    description="A package to convert your Jupyter Notebook",
+    author="George Mihaila",
+    author_email="georgemihaila@my.unt.edu",
+    description="A package to keep all helping functions used in Machine Learning together",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/your_package/homepage/",
+    url="https://github.com/gmihaila/ml_things",
     packages=find_packages(),
     install_requires=requirements,
     classifiers=[
