@@ -7,6 +7,7 @@ __version__ = "0.0.1"
 # functions imports
 from .array_functions import (pad_array,
                               batch_array)
+from .web_related import (download_from)
 
 # alternative names
 from .array_functions import batch_array as chunk_array
