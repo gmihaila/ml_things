@@ -14,6 +14,26 @@ If you find any bugs or something doesn't make sense please feel free to open an
 
 That is not all! This library also contains Python code snippets and notebooks that speed up my Machine Learning workflow.
 
+<br/>
+
+## Walktrhough
+
+* **[ml_things Library]()**
+
+  Details on the ml_things libary how to install and use it.
+
+
+* **[Snippets]()**
+
+Table of name and snippets I use most of the time and I find very useful.
+
+
+* **[Notebooks]()**
+
+Table of notebooks from old project that I converted to tutorials.
+
+<br/>
+
 # ml_things Library
 
 ## Installation
@@ -59,13 +79,19 @@ def batch_array(list_values, batch_size)
 # Snippets
 
 This is a very large variety of Python snippets without a certain theme. I put them in the most frequently used ones while keeping a logical order.
+I like to have them as simple and as efficient as possible.
 
-| Snippets       	|
-|---------------	|
-| Read File     	|
-| Write to File 	|
-| Debug         	|
-|               	|
+| Name | Description |
+|:-|:-|
+| Read FIle     	| One liner to read any file.
+| Write File 	       | One liner to write a string to a file.
+| Debug         	| Start debugging after this line.
+| Pip Install GitHub	| Install library directly from GitHub using `pip`.
+| Parse Argument     | Parse arguments given when running a `.py` file.
+| Using Doctest      | How to run a simple unittesc using function documentaiton. Useful when need to do unittest inside notebook.
+| Unittesting        | Simple example of creating unittests.
+| Sort Keys          | Sorting dicitonary using key values.
+| Sort Values        | Sorting dicitonary using values.
 
 
 # Notebooks
@@ -77,8 +103,8 @@ All of the notebooks are in **Google Colab**. Never herd of Google Colab? :screa
 If you check the `/ml_things/notebooks/` a lot of them are not listed here because they are not in a 'polished' form yet. These are the notebooks that are good enough to share with everyone:
 
 | Name 	| Description 	| Colab Link 	|
-|------	|-------------	|------------	|
-|      	|             	|            	|
+|:- |:- |:- |
+| Pretrain Transformers     | Simple notebook to pretrain transformers model on a specific dataset using [transformers]() from Huggingface |            	|
 |      	|             	|            	|
 |      	|             	|            	|
 |      	|             	|            	|
