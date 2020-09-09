@@ -16,15 +16,17 @@ That is not all! This library also contains Python code snippets and notebooks t
 
 # Table of contents
 
-* **[ml_things Library]()**: Details on the ml_things libary how to install and use it.
+* **[Ml_things]()**: Details on the ml_things libary how to install and use it.
 
-* **[Snippets]()**: Table of name and snippets I use most of the time and I find very useful.
+* **[Snippets]()**: Curated list of Python snippets I frequently use.
 
-* **[Notebooks]()**: Table of notebooks from old project that I converted to tutorials.
+* **[Notebooks]()**: Google Colab Notebooks from old project that I converted to tutorials.
+
+* **[Final Note]()**
 
 <br/>
 
-# ml_things Library
+# Ml_things
 
 ## Installation
 
