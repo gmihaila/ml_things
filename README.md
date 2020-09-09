@@ -37,7 +37,7 @@ def pad_array(variable_length_array, fixed_length=None, axis=1)
 ```
 |                 	|                                                                                                                                                                                                                          	|
 |-----------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| **Parameters:** 	| **variable_length_array** : array<br>Single arrays [1,2,3] or nested arrays [[1,2],[3]].<br><br>**fixed_length** : int<br>Max length of rows for numpy.<br><br>**axis** : int<br>Directions along rows: 1 or columns: 0. 	|
+| **Parameters:** 	| **variable_length_array** : array<br>&nbsp;&nbsp;&nbsp;&nbsp;Single arrays [1,2,3] or nested arrays [[1,2],[3]].<br><br>**fixed_length** : int<br>Max length of rows for numpy.<br><br>**axis** : int<br>Directions along rows: 1 or columns: 0. 	|
 | **Returns:**    	| **numpy_array** :  <br>axis=1: fixed numpy array shape [len of array, fixed_length].                <br>axis=0: fixed numpy array shape [fixed_length, len of array].                                                    	|                                   	|
 
 Example:
