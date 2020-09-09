@@ -14,23 +14,13 @@ If you find any bugs or something doesn't make sense please feel free to open an
 
 That is not all! This library also contains Python code snippets and notebooks that speed up my Machine Learning workflow.
 
-<br/>
+# Table of contents
 
-## Walktrhough
+* **[ml_things Library]()**: Details on the ml_things libary how to install and use it.
 
-* **[ml_things Library]()**
+* **[Snippets]()**: Table of name and snippets I use most of the time and I find very useful.
 
-  Details on the ml_things libary how to install and use it.
-
-
-* **[Snippets]()**
-
-Table of name and snippets I use most of the time and I find very useful.
-
-
-* **[Notebooks]()**
-
-Table of notebooks from old project that I converted to tutorials.
+* **[Notebooks]()**: Table of notebooks from old project that I converted to tutorials.
 
 <br/>
 
@@ -96,7 +86,7 @@ I like to have them as simple and as efficient as possible.
 
 # Notebooks
 
-This is where I keep notebooks of some previous projects whihc I turnned them into small tutorials. A lot of times I use them as basis for starting a new project.
+This is where I keep notebooks of some previous projects which I turnned them into small tutorials. A lot of times I use them as basis for starting a new project.
 
 All of the notebooks are in **Google Colab**. Never herd of Google Colab? :scream_cat: You have to check out the [Overview of Colaboratory](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiD1aD06trrAhVRXK0KHRC4DgQQjBAwBHoECAYQBA&url=https%3A%2F%2Fcolab.research.google.com%2Fnotebooks%2Fbasic_features_overview.ipynb&usg=AOvVaw0gXOkR6JGGFlwsxrkuYm7F), [Introduction to Colab and Python](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiD1aD06trrAhVRXK0KHRC4DgQQjBAwA3oECAYQCg&url=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Ftensorflow%2Fexamples%2Fblob%2Fmaster%2Fcourses%2Fudacity_intro_to_tensorflow_for_deep_learning%2Fl01c01_introduction_to_colab_and_python.ipynb&usg=AOvVaw2pr-crqP30RHfDs7hjKNnc) and what I think is a great medium article about it [to configure Google Colab Like a Pro](https://medium.com/@robertbracco1/configuring-google-colab-like-a-pro-d61c253f7573).
 
