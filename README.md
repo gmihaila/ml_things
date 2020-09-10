@@ -62,10 +62,24 @@ array([[1., 2., 0., 0., 0.],
        [4., 5., 6., 0., 0.]])
 ```
 
-### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/d18728fba08640d7f1bc060e299e4d4e84814a25/src/ml_things/array_functions.py#L98)
+### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/array_functions.py#L98)
 
 ```python
 def batch_array(list_values, batch_size)
+```
+
+
+### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L22)
+
+```python
+plot_confusion_matrix(y_true, y_pred, classes='', normalize=False, title=None, cmap=plt.cm.Blues, image=None,
+                          verbose=0, magnify=1.2, dpi=50)
+```
+
+### download_from [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/web_related.py#L21)
+
+```python
+download_from(url, path)
 ```
 
 # Snippets
