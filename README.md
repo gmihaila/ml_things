@@ -47,10 +47,11 @@ pip install git+https://github.com/gmihaila/ml_things
 ```python
 def pad_array(variable_length_array, fixed_length=None, axis=1)
 ```
-|                 	|                                                                                                                                                                                                                          	|
-|-----------------	|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| **Parameters:** 	| **variable_length_array** : array<br>&nbsp;&nbsp;&nbsp;&nbsp;Single arrays [1,2,3] or nested arrays [[1,2],[3]].<br>**fixed_length** : int<br>&nbsp;&nbsp;&nbsp;&nbsp;Max length of rows for numpy.<br>**axis** : int<br>&nbsp;&nbsp;&nbsp;&nbsp;Directions along rows: 1 or columns: 0. 	|
-| **Returns:**    	| **numpy_array** :<br>&nbsp;&nbsp;&nbsp;&nbsp;axis=1: fixed numpy array shape [len of array, fixed_length].<br>&nbsp;&nbsp;&nbsp;&nbsp;axis=0: fixed numpy array shape [fixed_length, len of array].                                                    	|                                   	|
+|Description:|Pad variable length array to a fixed numpy array. <br>It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].|
+|:-|:-|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; variable_length_array: Single arrays [1,2,3] or nested arrays [[1,2],[3]]. <br> **:param** <br>&nbsp;&nbsp; fixed_length: max length of rows for numpy. <br> **:param** <br>&nbsp;&nbsp; axis: directions along rows: 1 or columns: 0 |
+|**Returns:**|**:return:** <br>&nbsp;&nbsp; numpy_array: <br>&nbsp;&nbsp;&nbsp;&nbsp; axis=1: fixed numpy array shape [len of array, fixed_length]. <br>&nbsp;&nbsp;&nbsp;&nbsp; axis=0: fixed numpy array shape [fixed_length, len of array].|                                                                                                                                 
+
 
 Example:
 
