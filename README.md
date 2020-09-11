@@ -69,6 +69,10 @@ array([[1., 2., 0., 0., 0.],
 def batch_array(list_values, batch_size)
 ```
 
+|Description:|Split a list into batches/chunks.<br> Last batch size is remaining of list values.|
+|:-|:-|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; list_values: can be any kind of list/array.<br> **:param** <br>&nbsp;&nbsp; batch_size: int value of the batch length.|
+|**Returns:**|**:return:** <br>&nbsp;&nbsp; List of batches from list_values.|
 
 ### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L22)
 
