@@ -84,21 +84,7 @@ plot_array(array, step_size=1, use_label=None, use_title=None, use_xlabel=None, 
 
 |Description:|Create plot from a single array of values.|
 |:-|:-|
-|**Parameters:**|
-**:param** <br>&nbsp;&nbsp; array: list of values. Can be of type list or np.ndarray. <br>
-**:param** <br>&nbsp;&nbsp; step_size: steps shows on x-axis. Change if each steps is different than 1. <br>
-**:param** <br>&nbsp;&nbsp; use_label: display label of values from array. <br>
-**:param** <br>&nbsp;&nbsp; use_title: title on top of plot. <br>
-**:param** <br>&nbsp;&nbsp; use_xlabel: horizontal axis label. <br>
-**:param** <br>&nbsp;&nbsp; use_ylabel: vertical axis label. <br>
-**:param** <br>&nbsp;&nbsp; style_sheet: style of plot. Use plt.style.available to show all styles. <br>
-**:param** <br>&nbsp;&nbsp; use_grid: show grid on plot or not. <br>
-**:param** <br>&nbsp;&nbsp; width: horizontal length of plot. <br>
-**:param** <br>&nbsp;&nbsp; height: vertical length of plot. <br>
-**:param** <br>&nbsp;&nbsp; use_linestyle: whtat style to use on line from ['-', '--', '-.', ':']. <br>
-**:param** <br>&nbsp;&nbsp; use_dpi: quality of image saved from plot. 100 is prety high. <br>
-**:param** <br>&nbsp;&nbsp; path: path where to save the plot as an image - if set to None no image will be saved. <br>
-**:param** <br>&nbsp;&nbsp; show_plot: if you want to call `plt.show()`. or not (if you run on a headless server).|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; array: list of values. Can be of type list or np.ndarray. <br>**:param** <br>&nbsp;&nbsp; step_size: steps shows on x-axis. Change if each steps is different than 1. <br>**:param** <br>&nbsp;&nbsp; use_label: display label of values from array. <br>**:param** <br>&nbsp;&nbsp; use_title: title on top of plot. <br>**:param** <br>&nbsp;&nbsp; use_xlabel: horizontal axis label. <br>**:param** <br>&nbsp;&nbsp; use_ylabel: vertical axis label. <br>**:param** <br>&nbsp;&nbsp; style_sheet: style of plot. Use plt.style.available to show all styles. <br>**:param** <br>&nbsp;&nbsp; use_grid: show grid on plot or not. <br>**:param** <br>&nbsp;&nbsp; width: horizontal length of plot. <br>**:param** <br>&nbsp;&nbsp; height: vertical length of plot. <br>**:param** <br>&nbsp;&nbsp; use_linestyle: whtat style to use on line from ['-', '--', '-.', ':']. <br>**:param** <br>&nbsp;&nbsp; use_dpi: quality of image saved from plot. 100 is prety high. <br>**:param** <br>&nbsp;&nbsp; path: path where to save the plot as an image - if set to None no image will be saved. <br>**:param** <br>&nbsp;&nbsp; show_plot: if you want to call `plt.show()`. or not (if you run on a headless server).|
 |**Returns:**||
 
 
