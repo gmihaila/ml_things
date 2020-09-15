@@ -19,6 +19,81 @@ import numpy as np
 from sklearn.metrics import confusion_matrix
 
 
+def plot_array(array, step_size=1, use_label=None, use_title=None, use_xlabel=None, use_ylabel=None,
+               style_sheet='ggplot', use_grid=True, width=3, height=1, use_linestyle='-', use_dpi=20, path=None,
+               show_plot=True):
+    """Create plot from a single array of values.
+
+    :param array: list of values. Can be of type list or np.ndarray.
+    :param step_size: steps shows on x-axis. Change if each steps is different than 1.
+    :param use_label: display label of values from array.
+    :param use_title: title on top of plot.
+    :param use_xlabel: horizontal axis label.
+    :param use_ylabel: vertical axis label.
+    :param style_sheet: style of plot. Use plt.style.available to show all styles.
+    :param use_grid: show grid on plot or not.
+    :param width: horizontal length of plot.
+    :param height: vertical length of plot.
+    :param use_linestyle: whtat style to use on line from ['-', '--', '-.', ':'].
+    :param use_dpi: quality of image saved from plot. 100 is prety high.
+    :param path: path where to save the plot as an image - if set to None no image will be saved.
+    :param show_plot: if you want to call `plt.show()`. or not (if you run on a headless server).
+    :return:
+    """
+    # check if `array` is correct format
+    if not isinstance(array, list) or isinstance(array, np.ndarray):
+        # raise value error
+        raise ValueError("`array` needs to be a list of values!")
+
+    if style_sheet in plt.style.available:
+        # set style of plot
+        plt.style.use(style_sheet)
+    else:
+        # style is not correct
+        raise ValueError("`style_sheet=%s` is not in the supported styles: %s" % (str(style_sheet),
+                                                                                  str(plt.style.available)))
+    # all linestyles
+    linestyles = ['-', '--', '-.', ':']
+
+    # check if linestyle is set right
+    if use_linestyle not in linestyles:
+        # raise error
+        raise ValueError("`linestyle=%s` is not in the styles: %s!" % (str(use_linestyle), str(linestyles)))
+
+    # set steps plotted on x-axis - we can use step if 1 unit has different value
+    steps = np.array(range(1, len(array) + 1)) * step_size
+    # single plot figure
+    plt.subplot(1, 2, 1)
+    # plot array as a single line
+    plt.plot(steps, array, linestyle=use_linestyle, label=use_label)
+    # set title of figure
+    plt.title(use_title)
+    # set horizontal axis name
+    plt.xlabel(use_xlabel)
+    # set vertical axis name
+    plt.ylabel(use_ylabel)
+    # place legend best position
+    plt.legend(loc='best') if use_label is not None else None
+    # display grid depending on `use_grid`
+    plt.grid(use_grid)
+    # make figure nice
+    plt.tight_layout()
+    # get figure object from plot
+    fig = plt.gcf()
+    # get size of figure
+    figsize = fig.get_size_inches()
+    # change size depending on height and width variables
+    figsize = [figsize[0] * width, figsize[1] * height]
+    # set the new figure size
+    fig.set_size_inches(figsize)
+    # save figure to image if path is set
+    fig.savefig(path, dpi=use_dpi) if path is not None else None
+    # show plot
+    plt.show() if show_plot is True else None
+
+    return
+
+
 def plot_confusion_matrix(y_true, y_pred, classes='', normalize=False, title=None, cmap=plt.cm.Blues, image=None,
                           verbose=0, magnify=1.2, dpi=50):
     """This function prints and plots the confusion matrix.

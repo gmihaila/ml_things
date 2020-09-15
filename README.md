@@ -74,18 +74,70 @@ def batch_array(list_values, batch_size)
 |**Parameters:**|**:param** <br>&nbsp;&nbsp; list_values: can be any kind of list/array.<br> **:param** <br>&nbsp;&nbsp; batch_size: int value of the batch length.|
 |**Returns:**|**:return:** <br>&nbsp;&nbsp; List of batches from list_values.|
 
-### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L22)
+### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L22)
+
+```python
+plot_array(array, step_size=1, use_label=None, use_title=None, use_xlabel=None, use_ylabel=None,
+               style_sheet='ggplot', use_grid=True, width=3, height=1, use_linestyle='-', use_dpi=20, path=None,
+               show_plot=True)
+```
+
+|Description:|Create plot from a single array of values.|
+|:-|:-|
+|**Parameters:**|
+**:param** <br>&nbsp;&nbsp; array: list of values. Can be of type list or np.ndarray. <br>
+**:param** <br>&nbsp;&nbsp; step_size: steps shows on x-axis. Change if each steps is different than 1. <br>
+**:param** <br>&nbsp;&nbsp; use_label: display label of values from array. <br>
+**:param** <br>&nbsp;&nbsp; use_title: title on top of plot. <br>
+**:param** <br>&nbsp;&nbsp; use_xlabel: horizontal axis label. <br>
+**:param** <br>&nbsp;&nbsp; use_ylabel: vertical axis label. <br>
+**:param** <br>&nbsp;&nbsp; style_sheet: style of plot. Use plt.style.available to show all styles. <br>
+**:param** <br>&nbsp;&nbsp; use_grid: show grid on plot or not. <br>
+**:param** <br>&nbsp;&nbsp; width: horizontal length of plot. <br>
+**:param** <br>&nbsp;&nbsp; height: vertical length of plot. <br>
+**:param** <br>&nbsp;&nbsp; use_linestyle: whtat style to use on line from ['-', '--', '-.', ':']. <br>
+**:param** <br>&nbsp;&nbsp; use_dpi: quality of image saved from plot. 100 is prety high. <br>
+**:param** <br>&nbsp;&nbsp; path: path where to save the plot as an image - if set to None no image will be saved. <br>
+**:param** <br>&nbsp;&nbsp; show_plot: if you want to call `plt.show()`. or not (if you run on a headless server).|
+|**Returns:**||
+
+
+
+### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L97)
 
 ```python
 plot_confusion_matrix(y_true, y_pred, classes='', normalize=False, title=None, cmap=plt.cm.Blues, image=None,
                           verbose=0, magnify=1.2, dpi=50)
 ```
 
+|Description:|This function prints and plots the confusion matrix.<br>Normalization can be applied by setting `normalize=True`.
+<br>y_true needs to contain all possible labels.|
+|:-|:-|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; y_true: array labels values. <br>**:param** <br>&nbsp;&nbsp; y_pred: array predicted label values.
+**:param** <br>&nbsp;&nbsp; classes: array list of label names. <br>
+**:param** <br>&nbsp;&nbsp; normalize: bool normalize confusion matrix or not. <br>
+**:param** <br>&nbsp;&nbsp; title: str string title of plot. <br>
+**:param** <br>&nbsp;&nbsp; cmap: plt.cm plot theme. <br>
+**:param** <br>&nbsp;&nbsp; image: str path to save plot in an image. <br>
+**:param** <br>&nbsp;&nbsp; verbose: int print confusion matrix when calling function. <br>
+**:param** <br>&nbsp;&nbsp; magnify: int zoom of plot. <br>
+**:param** <br>&nbsp;&nbsp; dpi: int clarity of plot.|
+|**Returns:**||
+
+
 ### download_from [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/web_related.py#L21)
 
 ```python
 download_from(url, path)
 ```
+|Description:|Download file from url.|
+|:-|:-|
+|**Parameters:**|
+**:param url:** <br>&nbsp;&nbsp;  web path of file. <br>
+**:param path:** <br>&nbsp;&nbsp;  path to save the file.|
+|**Returns:**|**:return:** <br>&nbsp;&nbsp; path where file was saved|
+
+
 
 # Snippets
 
