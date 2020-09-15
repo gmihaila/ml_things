@@ -99,15 +99,7 @@ plot_confusion_matrix(y_true, y_pred, classes='', normalize=False, title=None, c
 |Description:|This function prints and plots the confusion matrix.<br>Normalization can be applied by setting `normalize=True`.
 <br>y_true needs to contain all possible labels.|
 |:-|:-|
-|**Parameters:**|**:param** <br>&nbsp;&nbsp; y_true: array labels values. <br>**:param** <br>&nbsp;&nbsp; y_pred: array predicted label values.
-**:param** <br>&nbsp;&nbsp; classes: array list of label names. <br>
-**:param** <br>&nbsp;&nbsp; normalize: bool normalize confusion matrix or not. <br>
-**:param** <br>&nbsp;&nbsp; title: str string title of plot. <br>
-**:param** <br>&nbsp;&nbsp; cmap: plt.cm plot theme. <br>
-**:param** <br>&nbsp;&nbsp; image: str path to save plot in an image. <br>
-**:param** <br>&nbsp;&nbsp; verbose: int print confusion matrix when calling function. <br>
-**:param** <br>&nbsp;&nbsp; magnify: int zoom of plot. <br>
-**:param** <br>&nbsp;&nbsp; dpi: int clarity of plot.|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; y_true: array labels values. <br>**:param** <br>&nbsp;&nbsp; y_pred: array predicted label values.**:param** <br>&nbsp;&nbsp; classes: array list of label names. <br>**:param** <br>&nbsp;&nbsp; normalize: bool normalize confusion matrix or not. <br>**:param** <br>&nbsp;&nbsp; title: str string title of plot. <br>**:param** <br>&nbsp;&nbsp; cmap: plt.cm plot theme. <br>**:param** <br>&nbsp;&nbsp; image: str path to save plot in an image. <br>**:param** <br>&nbsp;&nbsp; verbose: int print confusion matrix when calling function. <br>**:param** <br>&nbsp;&nbsp; magnify: int zoom of plot. <br>**:param** <br>&nbsp;&nbsp; dpi: int clarity of plot.|
 |**Returns:**||
 
 
@@ -118,9 +110,7 @@ download_from(url, path)
 ```
 |Description:|Download file from url.|
 |:-|:-|
-|**Parameters:**|
-**:param url:** <br>&nbsp;&nbsp;  web path of file. <br>
-**:param path:** <br>&nbsp;&nbsp;  path to save the file.|
+|**Parameters:**|**:param url:** <br>&nbsp;&nbsp;  web path of file. <br>**:param path:** <br>&nbsp;&nbsp;  path to save the file.|
 |**Returns:**|**:return:** <br>&nbsp;&nbsp; path where file was saved|
 
 
