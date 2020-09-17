@@ -49,7 +49,7 @@ def pad_array(variable_length_array, fixed_length=None, axis=1)
 ```
 |Description:|Pad variable length array to a fixed numpy array. <br>It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].|
 |:-|:-|
-|**Parameters:**|**:param** <br>&nbsp;&nbsp; variable_length_array: Single arrays [1,2,3] or nested arrays [[1,2],[3]]. <br> **:param** <br>&nbsp;&nbsp; fixed_length: max length of rows for numpy. <br> **:param** <br>&nbsp;&nbsp; axis: directions along rows: 1 or columns: 0 |
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; variable_length_array: Single arrays [1,2,3] or nested arrays [[1,2],[3]]. <br> **:param** <br>&nbsp;&nbsp; fixed_length: max length of rows for numpy. <br> **:param** <br>&nbsp;&nbsp; axis: directions along rows: 1 or columns: 0<br> **:param** <br>&nbsp;&nbsp; pad_value: what value to use as padding, default is 0. |
 |**Returns:**|**:return:** <br>&nbsp;&nbsp; numpy_array: <br>&nbsp;&nbsp;&nbsp;&nbsp; axis=1: fixed numpy array shape [len of array, fixed_length]. <br>&nbsp;&nbsp;&nbsp;&nbsp; axis=0: fixed numpy array shape [fixed_length, len of array].|                                                                                                                                 
 
 

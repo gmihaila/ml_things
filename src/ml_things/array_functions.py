@@ -14,11 +14,8 @@
 # limitations under the License.
 """Functions that are used on array like variables/objects"""
 
-import numpy as np
-import warnings
 
-
-def pad_array(variable_length_array, fixed_length=None, axis=1):
+def pad_array(variable_length_array, fixed_length=None, axis=1, pad_value=0.0):
     """Pad variable length array to a fixed numpy array.
     It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
 
@@ -28,6 +25,8 @@ def pad_array(variable_length_array, fixed_length=None, axis=1):
       fixed_length: max length of rows for numpy.
     :param
       axis: directions along rows: 1 or columns: 0
+    :param
+      pad_value: what value to use as padding, default is 0.
     :return:
       numpy_array:  axis=1: fixed numpy array shape [len of array, fixed_length].
                     axis=0: fixed numpy array shape [fixed_length, len of array].
@@ -50,7 +49,7 @@ def pad_array(variable_length_array, fixed_length=None, axis=1):
 
         if axis == 1:
             # perform padding on rows
-            numpy_array = np.zeros((len(variable_length_array), fixed_length))
+            numpy_array = np.ones((len(variable_length_array), fixed_length)) * pad_value
             # verify each row
             for numpy_row, array_row in zip(numpy_array, variable_length_array):
                 # concatenate array row if it is longer
@@ -65,7 +64,7 @@ def pad_array(variable_length_array, fixed_length=None, axis=1):
             # padding on columns
             if fixed_length >= len(variable_length_array):
                 # need to pad
-                numpy_array = np.zeros((fixed_length, len(variable_length_array[0])))
+                numpy_array = np.ones((fixed_length, len(variable_length_array[0]))) * pad_value
                 numpy_array[:len(variable_length_array)] = variable_length_array
             else:
                 # need to cut array
@@ -79,13 +78,13 @@ def pad_array(variable_length_array, fixed_length=None, axis=1):
 
         if axis == 1:
             # perform padding on rows
-            numpy_array = np.zeros(fixed_length)
+            numpy_array = np.ones(fixed_length) * pad_value
             variable_length_array = variable_length_array[:fixed_length]
             numpy_array[:len(variable_length_array)] = variable_length_array
 
         elif axis == 0:
             # padding on columns
-            numpy_array = np.zeros((fixed_length, len(variable_length_array)))
+            numpy_array = np.ones((fixed_length, len(variable_length_array))) * pad_value
             numpy_array[0] = variable_length_array
 
         return numpy_array
