@@ -14,6 +14,9 @@
 # limitations under the License.
 """Functions that are used on array like variables/objects"""
 
+import numpy as np
+import warnings
+
 
 def pad_array(variable_length_array, fixed_length=None, axis=1, pad_value=0.0):
     """Pad variable length array to a fixed numpy array.
