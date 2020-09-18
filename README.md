@@ -115,6 +115,20 @@ download_from(url, path)
 
 
 
+### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/text_functions.py#L22)
+
+```python
+clean_text(text, full_clean=False, punctuation=False, numbers=False, lower=False, extra_spaces=False,
+               control_characters=False, tokenize_whitespace=False, remove_characters='')
+```
+
+
+|Description:|Clean text using various techniques.|
+|:-|:-|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp;  text: string that needs cleaning. <br>**:param** <br>&nbsp;&nbsp;  full_clean: remove: punctuation, numbers, extra space, control characters and lower case. <br>**:param** <br>&nbsp;&nbsp;  punctuation: remove punctuation from text. <br>**:param** <br>&nbsp;&nbsp;  numbers: remove digits from text. <br>**:param** <br>&nbsp;&nbsp;  lower: lower case all text. <br>**:param** <br>&nbsp;&nbsp;  extra_spaces: remove extra spaces - everything beyond one space. <br>**:param** <br>&nbsp;&nbsp;  control_characters: remove characters like `\n`, `\t` etc. <br>**:param** <br>&nbsp;&nbsp;  tokenize_whitespace: return a list of tokens split on whitespace. <br>**:param** <br>&nbsp;&nbsp;  remove_characters: remove defined characters form text. <br>|
+|**Returns:**|**:return:** <br>&nbsp;&nbsp; cleaned text or list of tokens of cleaned text.|
+
+
 # Snippets
 
 This is a very large variety of Python snippets without a certain theme. I put them in the most frequently used ones while keeping a logical order.
