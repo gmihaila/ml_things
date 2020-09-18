@@ -136,15 +136,18 @@ I like to have them as simple and as efficient as possible.
 
 | Name | Description |
 |:-|:-|
-| Read FIle     	| One liner to read any file.
-| Write File 	       | One liner to write a string to a file.
-| Debug         	| Start debugging after this line.
-| Pip Install GitHub	| Install library directly from GitHub using `pip`.
-| Parse Argument     | Parse arguments given when running a `.py` file.
-| Using Doctest      | How to run a simple unittesc using function documentaiton. Useful when need to do unittest inside notebook.
-| Unittesting        | Simple example of creating unittests.
-| Sort Keys          | Sorting dicitonary using key values.
-| Sort Values        | Sorting dicitonary using values.
+| [Read FIle](https://gmihaila.github.io/useful/useful/#read-file)     	| One liner to read any file.
+| [Write File](https://gmihaila.github.io/useful/useful/#write-file) 	       | One liner to write a string to a file.
+| [Debug](https://gmihaila.github.io/useful/useful/#debug)         	| Start debugging after this line.
+| [Pip Install GitHub](https://gmihaila.github.io/useful/useful/#pip-install-github)	| Install library directly from GitHub using `pip`.
+| [Parse Argument](https://gmihaila.github.io/useful/useful/#parse-argument)     | Parse arguments given when running a `.py` file.
+| [Doctest](https://gmihaila.github.io/useful/useful/#doctest)      | How to run a simple unittesc using function documentaiton. Useful when need to do unittest inside notebook.
+| [Fix Text](https://gmihaila.github.io/useful/useful/#fix-text) | Since text data is always messy, I always use it. It is great in fixing any bad Unicode.
+| [Current Date](https://gmihaila.github.io/useful/useful/#current-date)     | How to get current date in Python. I use this when need to name log files.
+| [Current Time](https://gmihaila.github.io/useful/useful/#current-time) | Get current time in Python.
+| [Remove Punctuation](https://gmihaila.github.io/useful/useful/#remove-punctuation)        | The fastest way to remove punctuation in Python3.
+| [PyTorch-Dataset](https://gmihaila.github.io/useful/useful/#dataset)       | Code sample on how to create a PyTorch Dataset.
+| [PyTorch-Device](https://gmihaila.github.io/useful/useful/#pytorch-device)        | How to setup device in PyTorch to detect if GPU is available.
 
 
 # Notebooks
@@ -155,9 +158,10 @@ All of the notebooks are in **Google Colab**. Never heard of Google Colab? :scre
 
 If you check the `/ml_things/notebooks/` a lot of them are not listed here because they are not in a 'polished' form yet. These are the notebooks that are good enough to share with everyone:
 
-| Name 	| Description 	| Colab Link 	|
+| Name 	| Description 	| Google Colab 	|
 |:- |:- |:- |
-| Pretrain Transformers     | Simple notebook to pretrain transformers model on a specific dataset using [transformers]() from Huggingface |            	|
+| [PyTorchText](https://gmihaila.github.io/tutorial_notebooks/pytorchtext/) | This notebook is an example of using pytorchtext powerful BucketIterator function which allows grouping examples of similar lengths to provide the most optimal batching method. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gmihaila/ml_things/blob/master/notebooks/pytorch/pytorchtext.ipynb) |
+| Pretrain Transformers     | This notebook is used to pretrain transformers models using Huggingface. |      [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14KCDms4YLrE7Ekxl9VtrdT229UTDyim3#offline=true&sandboxMode=true)|
 |      	|             	|            	|
 |      	|             	|            	|
 |      	|             	|            	|
