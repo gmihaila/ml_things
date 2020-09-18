@@ -110,7 +110,7 @@ download_from(url, path)
 ```
 |Description:|Download file from url.|
 |:-|:-|
-|**Parameters:**|**:param url:** <br>&nbsp;&nbsp;  web path of file. <br>**:param path:** <br>&nbsp;&nbsp;  path to save the file.|
+|**Parameters:**|**:param** <br>&nbsp;&nbsp; url: web path of file. <br>**:param** <br>&nbsp;&nbsp;  path: path to save the file.|
 |**Returns:**|**:return:** <br>&nbsp;&nbsp; path where file was saved|
 
 
