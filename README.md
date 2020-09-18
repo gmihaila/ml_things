@@ -96,11 +96,11 @@ plot_confusion_matrix(y_true, y_pred, classes='', normalize=False, title=None, c
                           verbose=0, magnify=1.2, dpi=50)
 ```
 
-|Description:|This function prints and plots the confusion matrix.<br>Normalization can be applied by setting normalize=True.
-<br>y_true needs to contain all possible labels.|
-|:-|:-|
-|**Parameters:**|**:param** <br>&nbsp;&nbsp; y_true: array labels values. <br>**:param** <br>&nbsp;&nbsp; y_pred: array predicted label values.**:param**<br>&nbsp;&nbsp; classes: array list of label names. <br>**:param** <br>&nbsp;&nbsp; normalize: bool normalize confusion matrix or not. <br>**:param** <br>&nbsp;&nbsp; title: str string title of plot. <br>**:param** <br>&nbsp;&nbsp; cmap: plt.cm plot theme. <br>**:param** <br>&nbsp;&nbsp; image: str path to save plot in an image. <br>**:param** <br>&nbsp;&nbsp; verbose: int print confusion matrix when calling function. <br>**:param** <br>&nbsp;&nbsp; magnify: int zoom of plot. <br>**:param** <br>&nbsp;&nbsp; dpi: int clarity of plot.|
-|**Returns:**||
+| Description: 	| This function prints and plots the confusion matrix.<br>Normalization can be applied by setting normalize=True. <br>y_true needs to contain all possible labels. 	|
+|:-	|:-	|
+| **Parameters:** 	| **:param** <br>   y_true: array labels values. <br>**:param** <br>   y_pred: array predicted label values.**:param**<br>   classes: array list of label names. <br>**:param** <br>   normalize: bool normalize confusion matrix or not. <br>**:param** <br>   title: str string title of plot. <br>**:param** <br>   cmap: plt.cm plot theme. <br>**:param** <br>   image: str path to save plot in an image. <br>**:param** <br>   verbose: int print confusion matrix when calling function. <br>**:param** <br>   magnify: int zoom of plot. <br>**:param** <br>   dpi: int clarity of plot. 	|
+| **Returns:** 	|  	|
+
 
 
 ### download_from [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/web_related.py#L21)
