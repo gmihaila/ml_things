@@ -161,7 +161,7 @@ If you check the `/ml_things/notebooks/` a lot of them are not listed here becau
 | Name 	| Description 	| Google Colab 	|
 |:- |:- |:- |
 | [PyTorchText](https://gmihaila.github.io/tutorial_notebooks/pytorchtext/) | This notebook is an example of using pytorchtext powerful BucketIterator function which allows grouping examples of similar lengths to provide the most optimal batching method. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gmihaila/ml_things/blob/master/notebooks/pytorch/pytorchtext.ipynb) |
-| Pretrain Transformers     | This notebook is used to pretrain transformers models using Huggingface. |      [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14KCDms4YLrE7Ekxl9VtrdT229UTDyim3#offline=true&sandboxMode=true)|
+| [Pretrain Transformers](https://gmihaila.github.io/tutorial_notebooks/pretrain_transformer/)     | This notebook is used to pretrain transformers models using Huggingface. |      [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14KCDms4YLrE7Ekxl9VtrdT229UTDyim3#offline=true&sandboxMode=true)|
 |      	|             	|            	|
 |      	|             	|            	|
 |      	|             	|            	|
@@ -171,4 +171,4 @@ If you check the `/ml_things/notebooks/` a lot of them are not listed here becau
 
 Thank you for checking out my repo. I am a perfectionist so I will do a lot of changes when it comes to small details. 
 
-Lern more about me? Check out my website **[gmihaila.github.io](http://gmihaila.github.io)**!
+Lern more about me? Check out my website **[gmihaila.github.io](http://gmihaila.github.io)**
