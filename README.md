@@ -20,6 +20,8 @@ That is not all! This library also contains Python code snippets and notebooks t
 
 * **[Snippets](https://github.com/gmihaila/ml_things#snippets)**: Curated list of Python snippets I frequently use.
 
+* **[Comments](https://github.com/gmihaila/ml_things#comments)**: Some small snippets of how I like to comment my code.
+
 * **[Notebooks](https://github.com/gmihaila/ml_things#notebooks)**: Google Colab Notebooks from old project that I converted to tutorials.
 
 * **[Final Note](https://github.com/gmihaila/ml_things#final-note)**
@@ -162,6 +164,43 @@ I like to have them as simple and as efficient as possible.
 | [Remove Punctuation](https://gmihaila.github.io/useful/useful/#remove-punctuation)        | The fastest way to remove punctuation in Python3.
 | [PyTorch-Dataset](https://gmihaila.github.io/useful/useful/#dataset)       | Code sample on how to create a PyTorch Dataset.
 | [PyTorch-Device](https://gmihaila.github.io/useful/useful/#pytorch-device)        | How to setup device in PyTorch to detect if GPU is available.
+
+
+# Comments
+
+These are a few snippets of how I like to comment my code. I saw a lot of different ways of how people comment their code. One thing is for sure: *any comment is better than no comment*.
+
+I try to follow as much as I can the [PEP 8 — the Style Guide for Python Code](https://pep8.org/#code-lay-out).
+
+When I comment a function or class:
+```python
+# required import for variables type declaration
+from typing import List, Optional, Tuple, Dict
+
+def my_function(function_argument: str, another_argument: Optional[List[int]] = None,
+                another_argument_: bool = True) -> Dict[str, int]
+       """Function/Class main comment. 
+
+       More details with enough spacing to make it easy to follow.
+
+       Arguments:
+              function_argument (:obj:`str`):
+                     A function argument description.
+              another_argument (:obj:`List[int]`, `optional`):
+                     This argument is optional and it will have a None value attributed inside the function.
+              another_argument_ (:obj:`bool`, `optional`, defaults to :obj:`True`):
+                     This argument is optional and it has a default value.
+                     The variable name has `_` to avoid conflict with similar name.
+
+       Returns:
+              :obj:`Dict[str: int]`: The function returns a dicitonary with string keys and int values.
+                     A class will not have a return of course.
+
+       """
+       
+       # make sure we keep out promise and return the variable type we described.
+       return {'argument': function_argument}
+```
 
 
 # Notebooks
