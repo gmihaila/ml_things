@@ -184,15 +184,19 @@ def my_function(function_argument: str, another_argument: Optional[List[int]] = 
        More details with enough spacing to make it easy to follow.
 
        Arguments:
+       
               function_argument (:obj:`str`):
                      A function argument description.
+                     
               another_argument (:obj:`List[int]`, `optional`):
                      This argument is optional and it will have a None value attributed inside the function.
+                     
               another_argument_ (:obj:`bool`, `optional`, defaults to :obj:`True`):
                      This argument is optional and it has a default value.
                      The variable name has `_` to avoid conflict with similar name.
-
+                     
        Returns:
+       
               :obj:`Dict[str: int]`: The function returns a dicitonary with string keys and int values.
                      A class will not have a return of course.
 
