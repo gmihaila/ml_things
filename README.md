@@ -179,7 +179,7 @@ from typing import List, Optional, Tuple, Dict
 
 def my_function(function_argument: str, another_argument: Optional[List[int]] = None,
                 another_argument_: bool = True) -> Dict[str, int]
-       """Function/Class main comment. 
+       r"""Function/Class main comment. 
 
        More details with enough spacing to make it easy to follow.
 
