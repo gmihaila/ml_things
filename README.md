@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/Working-Progress-red.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Generic badge](https://img.shields.io/badge/Updated-Sep_2020-yellow.svg)]()
+[![Generic badge](https://img.shields.io/badge/Updated-Oct_2020-yellow.svg)]()
 [![Generic badge](https://img.shields.io/badge/Website-Online-green.svg)]()
 
 **Machine Learning Things** is a lightweight python library that contains functions and code snippets that 
