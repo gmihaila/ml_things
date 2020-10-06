@@ -4,6 +4,8 @@
 
 __version__ = "0.0.1"
 
+import warnings
+
 # functions imports
 from .array_functions import (pad_array,
                               batch_array)
