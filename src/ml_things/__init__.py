@@ -4,6 +4,7 @@
 
 __version__ = "0.0.1"
 
+# make sure warnings are imported
 import warnings
 # always show deprecation warnings
 warnings.simplefilter('always', DeprecationWarning)

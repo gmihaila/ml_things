@@ -218,7 +218,6 @@ def plot_confusion_matrix(y_true, y_pred, title=None, use_title=None, classes=''
     if title is not None:
         # assign same value
         use_title = title
-        print('DeprecationWarning: `title` will be deprecated in future updates. Use `use_title` in stead!')
         warnings.warn("`title` will be deprecated in future updates. Use `use_title` in stead!", DeprecationWarning)
     if image is not None:
         # assign same value
