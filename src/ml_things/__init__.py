@@ -16,7 +16,11 @@ from .web_related import (download_from)
 from .plot_functions import (plot_array,
                              plot_dict,
                              plot_confusion_matrix)
-from .text_functions import (clean_text)
+
+# text type function
+from .text_functions import (clean_text,
+                             )
+
 # installed ftfy to fix any UNICODE problems in text data
 from ftfy import fix_text
 

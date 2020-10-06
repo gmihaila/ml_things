@@ -23,6 +23,9 @@ def clean_text(text, full_clean=False, punctuation=False, numbers=False, lower=F
                control_characters=False, tokenize_whitespace=False, remove_characters=''):
     """Clean text using various techniques.
 
+    I took inspiration from the cleantext library `https://github.com/prasanthg3/cleantext`. I did not like the whole
+    implementation so I made my own changes.
+
     :param text: string that needs cleaning
     :param full_clean: remove: punctuation, numbers, extra space, control characters and lower case
     :param punctuation: remove punctuation from text.
@@ -33,6 +36,10 @@ def clean_text(text, full_clean=False, punctuation=False, numbers=False, lower=F
     :param tokenize_whitespace: return a list of tokens split on whitespace.
     :param remove_characters: remove defined characters form text.
     :return: cleaned text or list of tokens of cleaned text.
+
+    Note:
+        As in the original cleantext library I will add: stop words removal, stemming and
+        negative-positive words removal.
     """
 
     if not isinstance(text, str):
