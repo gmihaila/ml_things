@@ -5,6 +5,8 @@
 __version__ = "0.0.1"
 
 import warnings
+# always show deprecation warnings
+warnings.simplefilter('always', DeprecationWarning)
 
 # functions imports
 from .array_functions import (pad_array,
