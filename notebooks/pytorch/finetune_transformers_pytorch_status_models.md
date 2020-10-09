@@ -1,4 +1,4 @@
-# Pre-trained models that work with **finetune_transformers_pytorch.ipynb**
+# Pretrained models that work with **finetune_transformers_pytorch.ipynb**
 
 |Status|Architecture|Shortcut name|
  |:-|:-|:-|
