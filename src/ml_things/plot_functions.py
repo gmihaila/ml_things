@@ -320,6 +320,8 @@ def plot_confusion_matrix(y_true, y_pred, title=None, use_title=None, classes=''
         assert len(set(y_true)) == len(classes)
     else:
         classes = set(y_true)
+    # Compute confusion matrix
+    cm = confusion_matrix(y_true, y_pred)
     # Nromalize setup
     if normalize is True:
         print("Normalized confusion matrix")
@@ -328,8 +330,6 @@ def plot_confusion_matrix(y_true, y_pred, title=None, use_title=None, classes=''
     else:
         print('Confusion matrix, without normalization')
         use_title = 'Confusion matrix, without normalization' if use_title is None else use_title
-    # Compute confusion matrix
-    cm = confusion_matrix(y_true, y_pred)
     # Print if verbose
     print(cm) if verbose > 0 else None
     # Plot setup
