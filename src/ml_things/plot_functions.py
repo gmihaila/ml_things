@@ -20,7 +20,7 @@ import warnings
 from sklearn.metrics import confusion_matrix
 
 
-def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None, points_values=False, use_xlabel=None,
+def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None, points_values=False, points_round=3, use_xlabel=None,
                use_xticks=True, use_ylabel=None, style_sheet='ggplot', use_grid=True, use_linestyle='-', width=3,
                height=1, magnify=1.2, use_dpi=50, path=None, show_plot=True):
     r"""Create plot from a single array of values.
@@ -48,6 +48,10 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
 
         points_values (:obj:`bool`, `optional`, defaults to :obj:`False`):
             Display each point value on the plot. This argument is optional and it has a default value attributed
+            inside the function.
+
+        points_round (:obj:`int`, `optional`, defaults to :obj:`1`):
+            Round decimal valus for points values. This argument is optional and it has a default value attributed
             inside the function.
 
         use_xlabel (:obj:`str`, `optional`):
@@ -139,7 +143,7 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
         # Loop through each point and plot the label.
         for x, y in zip(steps, array):
             # Add text label to plo.
-            plt.text(x, y, str(y))
+            plt.text(x, y, str(round(y, points_round)))
     # set title of figure
     plt.title(use_title)
     # set horizontal axis name
@@ -170,10 +174,12 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
     return
 
 
-def plot_dict(dict_arrays, step_size=1, use_title=None, points_values=False, use_xlabel=None, use_ylabel=None,
+def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_values=False, points_round=3, use_xlabel=None, use_ylabel=None,
                style_sheet='ggplot', use_grid=True, width=3, height=1, use_linestyles=None, magnify=1.2,
               use_dpi=50, path=None, show_plot=True):
     """Create plot from a single array of values.
+    :param start_step:
+    :param points_round:
     :param array: dictionary of lists or np.array
     :param step_size: steps shows on x-axis. Change if each steps is different than 1.
     :param use_title: title on top of plot.
@@ -226,7 +232,11 @@ def plot_dict(dict_arrays, step_size=1, use_title=None, points_values=False, use
     plt.subplot(1, 2, 1)
     for index, (use_label, array) in enumerate(dict_arrays.items()):
       # set steps plotted on x-axis - we can use step if 1 unit has different value
-      steps = np.array(range(1, len(array) + 1)) * step_size
+      if start_step > 0:
+          # Offset all steps by start_step.
+          steps = np.array(range(0, len(array))) * step_size + start_step
+      else:
+          steps = np.array(range(1, len(array) + 1)) * step_size
       # plot array as a single line
       plt.plot(steps, array, linestyle=use_linestyles[index], label=use_label)
       # Plots points values
@@ -234,7 +244,7 @@ def plot_dict(dict_arrays, step_size=1, use_title=None, points_values=False, use
         # Loop through each point and plot the label.
         for x, y in zip(steps, array):
           # Add text label to plo.
-          plt.text(x, y, str(y))
+          plt.text(x, y, str(round(y, points_round)))
     # set title of figure
     plt.title(use_title)
     # set horizontal axis name
