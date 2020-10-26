@@ -69,6 +69,17 @@ array([[ 1.,  2., 99., 99., 99.],
        
 ### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/array_functions.py#L98)
 
+Split a list into batches/chunks. Last batch size is remaining of list values.
+**Note:** *This is also called chunking. I call it batches since I use it more in ML.*
+
+The last batch will be the reamining values:
+
+```python
+>>> from ml_things import batch_array
+>>> batch_array(list_values=[1,2,3,4,5,6,7,8,8,9,8,6,5,4,6], batch_size=4)
+[[1, 2, 3, 4], [5, 6, 7, 8], [8, 9, 8, 6], [5, 4, 6]]
+```
+
 
 
 ### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L22)
