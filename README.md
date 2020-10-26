@@ -241,11 +241,10 @@ All of the notebooks are in **Google Colab**. Never heard of Google Colab? :scre
 
 If you check the `/ml_things/notebooks/` a lot of them are not listed here because they are not in a 'polished' form yet. These are the notebooks that are good enough to share with everyone:
 
-| Name 	| Description 	| Google Colab 	|
+| Name 	| Description 	| Links 	|
 |:- |:- |:- |
-| [PyTorchText](https://gmihaila.github.io/tutorial_notebooks/pytorchtext/) | This notebook is an example of using pytorchtext powerful BucketIterator function which allows grouping examples of similar lengths to provide the most optimal batching method. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gmihaila/ml_things/blob/master/notebooks/pytorch/pytorchtext.ipynb) |
-| [Pretrain Transformers](https://gmihaila.github.io/tutorial_notebooks/pretrain_transformer/)     | This notebook is used to pretrain transformers models using Huggingface. |      [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14KCDms4YLrE7Ekxl9VtrdT229UTDyim3#offline=true&sandboxMode=true)|
-|      	|             	|            	|
+| **:dog: Pretrain Transformers** | *Pretrain 67 transformers models on your custom dataset.* |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gmihaila/ml_things/blob/master/notebooks/pytorch/pretrain_transformers_pytorch.ipynb) [![Generic badge](https://img.shields.io/badge/GitHub-Source-greensvg)](https://github.com/gmihaila/ml_things/blob/master/notebooks/pytorch/pretrain_transformers_pytorch.ipynb) [![Generic badge](https://img.shields.io/badge/Download-Notebook-red.svg)](https://www.dropbox.com/s/rkq79hwzhqa6x8k/pretrain_transformers_pytorch.ipynb?dl=1) [![Generic badge](https://img.shields.io/badge/Article-Medium-black.svg)](https://gmihaila.medium.com/pretrain-transformers-models-in-pytorch-using-transformers-ecaaec00fbaa) [Generic badge](https://img.shields.io/badge/Blog-Post-blue.svg)](https://gmihaila.github.io/tutorial_notebooks/pretrain_transformers_pytorch/) |
+| **:violin: Fine-tune Transformers in PyTorch using Hugging Face Transformers** | *Complete tutorial on how to fine-tune 73 transformer models for text classification — no code changes necessary!* |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gmihaila/ml_things/blob/master/notebooks/pytorch/finetune_transformers_pytorch.ipynb) [![Generic badge](https://img.shields.io/badge/GitHub-Source-greensvg)](https://github.com/gmihaila/ml_things/blob/master/notebooks/pytorch/finetune_transformers_pytorch.ipynb) [![Generic badge](https://img.shields.io/badge/Download-Notebook-red.svg)](https://www.dropbox.com/s/tsqicfqgt8v87ae/finetune_transformers_pytorch.ipynb?dl=1) [![Generic badge](https://img.shields.io/badge/Article-Medium-black.svg)](https://medium.com/@gmihaila/fine-tune-transformers-in-pytorch-using-transformers-57b40450635) [Generic badge](https://img.shields.io/badge/Blog-Post-blue.svg)](https://gmihaila.github.io/tutorial_notebooks/finetune_transformers_pytorch/)|
 |      	|             	|            	|
 |      	|             	|            	|
 
@@ -255,4 +254,22 @@ If you check the `/ml_things/notebooks/` a lot of them are not listed here becau
 
 Thank you for checking out my repo. I am a perfectionist so I will do a lot of changes when it comes to small details. 
 
-Lern more about me? Check out my website **[gmihaila.github.io](http://gmihaila.github.io)**
+If you see something wrong please let me know by opening an 
+**[issue on my ml_things](https://github.com/gmihaila/ml_things/issues/new/choose)** GitHub repository! 
+
+A lot of tutorials out there are mostly a one-time thing and are not being maintained. I plan on keeping my 
+tutorials up to date as much as I can.
+
+<br>
+
+## **Contact** 🎣
+
+🦊 GitHub: [gmihaila](https://github.com/gmihaila)
+
+🌐 Website: [gmihaila.github.io](https://gmihaila.github.io/)
+
+👔 LinkedIn: [mihailageorge](https://medium.com/r/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmihailageorge)
+
+📬 Email: [georgemihaila@my.unt.edu.com](mailto:georgemihaila@my.unt.edu.com?subject=GitHub%20Website)
+
+<br>
