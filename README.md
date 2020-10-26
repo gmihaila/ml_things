@@ -33,7 +33,7 @@ That is not all! This library also contains Python code snippets and notebooks t
 
 * **[Comments](https://github.com/gmihaila/ml_things#comments)**: Sample on how I like to comment my code. It is still a work in progress.
 
-* **[Notebooks](https://github.com/gmihaila/ml_things#notebooks)**: Machine learning projects that I converted to tutorials and posted online.
+* **[Notebooks Tutorials](https://github.com/gmihaila/ml_things#notebooks-tutorials)**: Machine learning projects that I converted to tutorials and posted online.
 
 * **[Final Note](https://github.com/gmihaila/ml_things#final-note)**: Being grateful.
 
@@ -244,7 +244,7 @@ def my_function(function_argument: str, another_argument: Optional[List[int]] = 
 
 <br>
 
-# Notebooks
+# Notebooks Tutorials
 
 This is where I keep notebooks of some previous projects which I turnned them into small tutorials. A lot of times I use them as basis for starting a new project.
 
