@@ -44,7 +44,7 @@ pip install git+https://github.com/gmihaila/ml_things
 
 ## Functions
 
-### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/d18728fba08640d7f1bc060e299e4d4e84814a25/src/ml_things/array_functions.py#L21)
+### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/array_functions.py#L21)
 
 Pad variable length array to a fixed numpy array. It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
     
