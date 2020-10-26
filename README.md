@@ -44,7 +44,7 @@ pip install git+https://github.com/gmihaila/ml_things
 
 ## Functions
 
-### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/array_functions.py#L21)
+### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L21)
 
 Pad variable length array to a fixed numpy array. It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
     
@@ -67,7 +67,7 @@ array([[ 1.,  2., 99., 99., 99.],
        [ 4.,  5.,  6., 99., 99.]])
 ```
        
-### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/array_functions.py#L98)
+### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L120)
 
 Split a list into batches/chunks. Last batch size is remaining of list values.
 **Note:** *This is also called chunking. I call it batches since I use it more in ML.*
@@ -82,29 +82,27 @@ The last batch will be the reamining values:
 
 
 
-### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L22)
+### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L23)
 
 
 
-### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L97)
-
-
-
-
-
-### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/plot_functions.py#L97)
+### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L183)
 
 
 
 
-### download_from [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/web_related.py#L21)
+
+### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L360)
 
 
 
+### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/text_functions.py#L22)
 
-### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/9ea16e6df75a907fadf8c40b29ef7b3da9d37701/src/ml_things/text_functions.py#L22)
 
 
+### download_from [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/web_related.py#L21)
+
+<br>
 
 # Snippets
 
@@ -126,6 +124,7 @@ I like to have them as simple and as efficient as possible.
 | [PyTorch-Dataset](https://gmihaila.github.io/useful/useful/#dataset)       | Code sample on how to create a PyTorch Dataset.
 | [PyTorch-Device](https://gmihaila.github.io/useful/useful/#pytorch-device)        | How to setup device in PyTorch to detect if GPU is available.
 
+<br>
 
 # Comments
 
@@ -168,6 +167,8 @@ def my_function(function_argument: str, another_argument: Optional[List[int]] = 
 ```
 
 
+<br>
+
 # Notebooks
 
 This is where I keep notebooks of some previous projects which I turnned them into small tutorials. A lot of times I use them as basis for starting a new project.
@@ -184,6 +185,7 @@ If you check the `/ml_things/notebooks/` a lot of them are not listed here becau
 |      	|             	|            	|
 |      	|             	|            	|
 
+<br>
 
 # Final Note
 
