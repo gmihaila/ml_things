@@ -84,6 +84,16 @@ The last batch will be the reamining values:
 
 ### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L23)
 
+Create plot from a single array of values.
+
+All arguments are optimized for quick plots:
+
+```python
+>>> from ml_things import plot_array
+>>> plot_array([1,3,5,3,7,5,8,10], path='plot_array.png', magnify=0.5, use_title='A Random Plot', start_step=0.3, step_size=0.1, points_values=True)
+```
+
+![plot_array](https://github.com/gmihaila/ml_things/raw/master/tests/test_samples/plot_array.png)
 
 
 ### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L183)
