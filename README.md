@@ -44,7 +44,13 @@ pip install git+https://github.com/gmihaila/ml_things
 
 ## Functions
 
-### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L21)
+All function implemented in the **ml_things** module.
+
+### Array Functions
+
+Array manipulation related function that can be useful when working with machine learning.
+
+#### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L21)
 
 Pad variable length array to a fixed numpy array. It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
     
@@ -67,7 +73,7 @@ array([[ 1.,  2., 99., 99., 99.],
        [ 4.,  5.,  6., 99., 99.]])
 ```
        
-### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L120)
+#### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L120)
 
 Split a list into batches/chunks. Last batch size is remaining of list values.
 **Note:** *This is also called chunking. I call it batches since I use it more in ML.*
@@ -80,13 +86,16 @@ The last batch will be the reamining values:
 [[1, 2, 3, 4], [5, 6, 7, 8], [8, 9, 8, 6], [5, 4, 6]]
 ```
 
+### Plot Functions
+
+Plot related function that can be useful when working with machine learning.
 
 
-### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L23)
+#### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L23)
 
 Create plot from a single array of values.
 
-All arguments are optimized for quick plots:
+All arguments are optimized for quick plots. Change the `magnify` arguments to vary the size of the plot:
 
 ```python
 >>> from ml_things import plot_array
@@ -96,21 +105,66 @@ All arguments are optimized for quick plots:
 ![plot_array](https://github.com/gmihaila/ml_things/raw/master/tests/test_samples/plot_array.png)
 
 
-### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L183)
+#### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L183)
+
+Create plot from a single array of values.
+
+All arguments are optimized for quick plots. Change the `magnify` arguments to vary the size of the plot:
+
+```python
+>>> from ml_things import plot_dict
+>>> plot_dict({'train_acc':[1,3,5,3,7,5,8,10],
+                'valid_acc':[4,8,9]}, use_linestyles=['-', '--'], magnify=0.5, 
+                start_step=0.3, step_size=0.1,path='plot_dict.png', points_values=[True, False])
+```
+
+![plot_dict](https://github.com/gmihaila/ml_things/raw/efb2574a9935c6a6ef62135efba2d965b2044175/tests/test_samples/plot_dict.png)
 
 
+#### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L360)
+
+This function prints and plots the confusion matrix. Normalization can be applied by setting `normalize=True`.
+
+All arguments are optimized for quick plots. Change the `magnify` arguments to vary the size of the plot:
+
+```python
+>>> from ml_things import plot_confusion_matrix
+>>> plot_confusion_matrix(y_true=[1,0,1,1,0,1], y_pred=[0,1,1,1,0,1], magnify=0.5, use_title='My Confusion Matrix', path='plot_confusion_matrix.png');
+Confusion matrix, without normalization
+array([[1, 1],
+       [1, 3]])
+```
+
+![plot_confusion_matrix](https://github.com/gmihaila/ml_things/raw/efb2574a9935c6a6ef62135efba2d965b2044175/tests/test_samples/plot_confusion_matrix.png)
+
+### Text Functions
+
+Text related function that can be useful when working with machine learning.
 
 
+#### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/text_functions.py#L22)
 
-### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L360)
+Clean text using various techniques:
 
+```python
+>>> from ml_things import clean_text
+>>> clean_text("ThIs is $$$%.  \t\t\n \\ so dirtyyy$$ text :'(.   omg!!!", full_clean=True)
+'this is so dirtyyy text omg'
+```
 
+### Web Related
 
-### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/text_functions.py#L22)
+Web related function that can be useful when working with machine learning.
 
+#### download_from [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/web_related.py#L21)
 
+Download file from url. It will return the path of the downloaded file:
 
-### download_from [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/web_related.py#L21)
+```python
+>>> from ml_things import  download_from
+>>> download_from(url='https://raw.githubusercontent.com/gmihaila/ml_things/master/setup.py', path='.')
+'./setup.py'
+```
 
 <br>
 
