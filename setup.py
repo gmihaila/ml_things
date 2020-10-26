@@ -63,6 +63,7 @@ setup(
     package_dir={"": "src"},
     packages=find_packages("src"),
     install_requires=[
+        "scikit-learn",
         "numpy",
         # for downloading models over HTTPS
         "requests",

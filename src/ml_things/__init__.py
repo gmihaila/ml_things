@@ -11,11 +11,16 @@ warnings.simplefilter('always', DeprecationWarning)
 
 # functions imports
 from .array_functions import (pad_array,
-                              batch_array)
-from .web_related import (download_from)
+                              batch_array,
+                              )
+
+from .web_related import (download_from,
+                          )
+
 from .plot_functions import (plot_array,
                              plot_dict,
-                             plot_confusion_matrix)
+                             plot_confusion_matrix,
+                             )
 
 # text type function
 from .text_functions import (clean_text,

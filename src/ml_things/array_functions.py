@@ -19,25 +19,45 @@ import warnings
 
 
 def pad_array(variable_length_array, fixed_length=None, axis=1, pad_value=0.0):
-    """Pad variable length array to a fixed numpy array.
+    r"""
+    Pad variable length array to a fixed numpy array.
     It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
 
-    :param
-      variable_length_array: Single arrays [1,2,3] or nested arrays [[1,2],[3]].
-    :param
-      fixed_length: max length of rows for numpy.
-    :param
-      axis: directions along rows: 1 or columns: 0
-    :param
-      pad_value: what value to use as padding, default is 0.
-    :return:
-      numpy_array:  axis=1: fixed numpy array shape [len of array, fixed_length].
-                    axis=0: fixed numpy array shape [fixed_length, len of array].
+    Arguments:
+
+        variable_length_array (:obj:`list / np.ndarray`):
+            Single arrays [1,2,3] or nested arrays [[1,2],[3]].
+
+        fixed_length (:obj:`int`, `optional`):
+            Max length of rows for numpy. This argument is optional and it will have a `None` value attributed
+            inside the function.
+
+        axis (:obj:`int`, `optional`, defaults to :obj:`1`):
+            Directions along rows: 1 or columns: 0. This argument is optional and it has a default value attributed
+            inside the function.
+
+        pad_value (:obj:`float`, `optional`, defaults to :obj:`0.0`):
+            What value to use as padding, default is 0. This argument is optional and it has a default value attributed
+            inside the function.=0.0
+
+    Returns:
+
+        :obj:`np.ndarray`:  axis=1: fixed numpy array shape [len of array, fixed_length].
+                            axis=0: fixed numpy array shape [fixed_length, len of array].
+
+    Raises:
+        ValueError: If `axis` does not have 0 or 1 value.
+
+        ValueError: If `variable_length_array` does not have same row length for column padding `axis=0`.
+
+        ValueError: If `variable_length_array` is not valid format.
+
     """
 
     # padded array in numpy format
     numpy_array = None
 
+    # Make sure axis is right value.
     if axis not in [1, 0]:
         # axis value is wrong
         raise ValueError("`axis` value needs to be 1 for row padding \
@@ -98,14 +118,31 @@ def pad_array(variable_length_array, fixed_length=None, axis=1, pad_value=0.0):
 
 
 def batch_array(list_values, batch_size):
-    """Split a list into batches/chunks. Last batch size is remaining of list values.
-
-    :param list_values: can be any kind of list/array.
-    :param batch_size: int value of the batch length.
-    :return: List of batches from list_values.
+    r"""
+    Split a list into batches/chunks. Last batch size is remaining of list values.
 
     Note:
+
       This is also called chunking. I call it batches since I use it more in ML.
+
+    Arguments:
+
+        list_values (:obj:`list / np.ndarray`):
+            Can be any kind of list/array.
+
+        batch_size (:obj:`int`):
+            Value of the batch length.
+
+    Returns:
+
+        :obj:`np.ndarray`: List of batches from list_values.
+
+    Raises:
+
+        UserWarning: If `batch_size` is greater than length of `list_values`.
+
+        ValueError: If `list_values` is not valid format.
+
     """
 
     if isinstance(list_values, list) or isinstance(list_values, np.ndarray):
@@ -113,7 +150,7 @@ def batch_array(list_values, batch_size):
 
         if len(list_values) < batch_size:
             # make sure batch size is not greater than length of list
-            warnings.warn("`batch_size` is greater than length of `list_values`!")
+            warnings.warn("`batch_size` is greater than length of `list_values`!", UserWarning)
 
             return [list_values]
 

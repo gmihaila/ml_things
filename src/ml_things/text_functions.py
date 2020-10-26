@@ -21,25 +21,62 @@ import string
 
 def clean_text(text, full_clean=False, punctuation=False, numbers=False, lower=False, extra_spaces=False,
                control_characters=False, tokenize_whitespace=False, remove_characters=''):
-    """Clean text using various techniques.
+    r"""
+    Clean text using various techniques.
 
     I took inspiration from the cleantext library `https://github.com/prasanthg3/cleantext`. I did not like the whole
     implementation so I made my own changes.
 
-    :param text: string that needs cleaning
-    :param full_clean: remove: punctuation, numbers, extra space, control characters and lower case
-    :param punctuation: remove punctuation from text.
-    :param numbers: remove digits from text.
-    :param lower: lower case all text.
-    :param extra_spaces: remove extra spaces - everything beyond one space.
-    :param control_characters: remove characters like `\n`, `\t` etc.
-    :param tokenize_whitespace: return a list of tokens split on whitespace.
-    :param remove_characters: remove defined characters form text.
-    :return: cleaned text or list of tokens of cleaned text.
-
     Note:
         As in the original cleantext library I will add: stop words removal, stemming and
         negative-positive words removal.
+
+    Arguments:
+
+        text (:obj:`str`):
+            String that needs cleaning.
+
+        full_clean (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Remove: punctuation, numbers, extra space, control characters and lower case. This argument is optional and
+            it has a default value attributed inside the function.
+
+        punctuation (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Remove punctuation from text. This argument is optional and it has a default value attributed inside
+            the function.
+
+        numbers (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Remove digits from text. This argument is optional and it has a default value attributed inside
+            the function.
+
+        lower (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Lower case all text. This argument is optional and it has a default value attributed inside the function.
+
+        extra_spaces (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Remove extra spaces - everything beyond one space. This argument is optional and it has a default value
+            attributed inside the function.
+
+        control_characters (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Remove characters like `\n`, `\t` etc.This argument is optional and it has a default value attributed
+            inside the function.
+
+        tokenize_whitespace (:obj:`bool`, `optional`, defaults to :obj:`False`):
+            Return a list of tokens split on whitespace. This argument is optional and it has a default value
+            attributed inside the function.
+
+        remove_characters (:obj:`str`, `optional`, defaults to :obj:`''`):
+            Remove defined characters form text. This argument is optional and it has a default value attributed
+            inside the function.
+
+    Returns:
+
+        :obj:`str`: Clean string.
+
+    Raises:
+
+        ValueError: If `text` is not of type string.
+
+        ValueError: If `remove_characters` needs to be a string.
+
     """
 
     if not isinstance(text, str):

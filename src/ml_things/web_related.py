@@ -19,11 +19,21 @@ import requests
 
 
 def download_from(url, path):
-    """Download file from url.
+    r"""
+    Download file from url.
 
-    :param url: web path of file.
-    :param path: path to save the file.
-    :return: path where file was saved
+    Arguments:
+
+        url (:obj:`str`):
+            Web path of file.
+
+        path (:obj:`str`):
+            Path to save the file.
+
+    Returns:
+
+        :obj:`str`: Path where file was saved.
+
     """
 
     # get file name from url
