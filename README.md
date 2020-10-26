@@ -16,15 +16,26 @@ That is not all! This library also contains Python code snippets and notebooks t
 
 # Table of contents
 
-* **[ML_things](https://github.com/gmihaila/ml_things#ml_things)**: Details on the ml_things libary how to install and use it.
+* **[ML_things](https://github.com/gmihaila/ml_things#ml_things)**: 
+    * **[Installation](https://github.com/gmihaila/ml_things#installation)** Details on how to install **ml_things**.
+    * **[Array Functions](https://github.com/gmihaila/ml_things#array-functions)** Details on the **ml_things** array related functions:
+        * [pad_array](https://github.com/gmihaila/ml_things#pad_array-source)
+        * [batch_array](https://github.com/gmihaila/ml_things#batch_array-source)
+    * **[Plot Functions](https://github.com/gmihaila/ml_things#plot-functions)** Details on the **ml_things** plot related functions:
+        * [pad_array](https://github.com/gmihaila/ml_things#pad_array-source)
+        * [batch_array](https://github.com/gmihaila/ml_things#batch_array-source)
+    * **[Text Functions](https://github.com/gmihaila/ml_things#text-functions)** Details on the **ml_things** text related functions:
+        * [clean_text](https://github.com/gmihaila/ml_things#clean_text-source)
+    * **[Web Related](https://github.com/gmihaila/ml_things#web-related)** Details on the **ml_things** web related functions:
+        * [download_from](https://github.com/gmihaila/ml_things#download_from-source)
 
 * **[Snippets](https://github.com/gmihaila/ml_things#snippets)**: Curated list of Python snippets I frequently use.
 
-* **[Comments](https://github.com/gmihaila/ml_things#comments)**: Some small snippets of how I like to comment my code.
+* **[Comments](https://github.com/gmihaila/ml_things#comments)**: Sample on how I like to comment my code. It is still a work in progress.
 
-* **[Notebooks](https://github.com/gmihaila/ml_things#notebooks)**: Google Colab Notebooks from old project that I converted to tutorials.
+* **[Notebooks](https://github.com/gmihaila/ml_things#notebooks)**: Machine learning projects that I converted to tutorials and posted online.
 
-* **[Final Note](https://github.com/gmihaila/ml_things#final-note)**
+* **[Final Note](https://github.com/gmihaila/ml_things#final-note)**: Being grateful.
 
 <br/>
 
