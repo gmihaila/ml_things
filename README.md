@@ -24,8 +24,9 @@ That is not all! This library also contains Python code snippets and notebooks t
         * [pad_array](https://github.com/gmihaila/ml_things#pad_array-source)
         * [batch_array](https://github.com/gmihaila/ml_things#batch_array-source)
     * **[Plot Functions](https://github.com/gmihaila/ml_things#plot-functions)** Details on the **ml_things** plot related functions:
-        * [pad_array](https://github.com/gmihaila/ml_things#pad_array-source)
-        * [batch_array](https://github.com/gmihaila/ml_things#batch_array-source)
+        * [plot_array](https://github.com/gmihaila/ml_things#plot_array-source)
+        * [plot_dict](https://github.com/gmihaila/ml_things#plot_dict-source)
+        * [plot_confusion_matrix](https://github.com/gmihaila/ml_things#plot_confusion_matrix-source)
     * **[Text Functions](https://github.com/gmihaila/ml_things#text-functions)** Details on the **ml_things** text related functions:
         * [clean_text](https://github.com/gmihaila/ml_things#clean_text-source)
     * **[Web Related](https://github.com/gmihaila/ml_things#web-related)** Details on the **ml_things** web related functions:
