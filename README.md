@@ -64,7 +64,7 @@ All function implemented in the **ml_things** module.
 
 Array manipulation related function that can be useful when working with machine learning.
 
-#### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L21)
+#### pad_array [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/array_functions.py#L21)
 
 Pad variable length array to a fixed numpy array. It can handle single arrays [1,2,3] or nested arrays [[1,2],[3]].
     
@@ -87,7 +87,7 @@ array([[ 1.,  2., 99., 99., 99.],
        [ 4.,  5.,  6., 99., 99.]])
 ```
        
-#### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/array_functions.py#L120)
+#### batch_array [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/array_functions.py#L120)
 
 Split a list into batches/chunks. Last batch size is remaining of list values.
 **Note:** *This is also called chunking. I call it batches since I use it more in ML.*
@@ -105,7 +105,7 @@ The last batch will be the reamining values:
 Plot related function that can be useful when working with machine learning.
 
 
-#### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L23)
+#### plot_array [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L29)
 
 Create plot from a single array of values.
 
@@ -116,10 +116,10 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
 >>> plot_array([1,3,5,3,7,5,8,10], path='plot_array.png', magnify=0.1, use_title='A Random Plot', start_step=0.3, step_size=0.1, points_values=True, use_ylabel='Thid', use_xlabel='This')
 ```
 
-![plot_array](https://github.com/gmihaila/ml_things/raw/master/tests/test_samples/plot_array.png)
+![plot_array](https://github.com/gmihaila/ml_things/blob/master/tests/test_samples/plot_array.png)
 
 
-#### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L183)
+#### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L243)
 
 Create plot from a single array of values.
 
@@ -132,10 +132,10 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
                 start_step=0.3, step_size=0.1,path='plot_dict.png', points_values=[True, False], use_title='Title')
 ```
 
-![plot_dict](https://github.com/gmihaila/ml_things/raw/efb2574a9935c6a6ef62135efba2d965b2044175/tests/test_samples/plot_dict.png)
+![plot_dict](https://github.com/gmihaila/ml_things/blob/master/tests/test_samples/plot_dict.png)
 
 
-#### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/plot_functions.py#L360)
+#### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L471)
 
 This function prints and plots the confusion matrix. Normalization can be applied by setting `normalize=True`.
 
@@ -149,14 +149,14 @@ array([[1, 1],
        [1, 3]])
 ```
 
-![plot_confusion_matrix](https://github.com/gmihaila/ml_things/raw/efb2574a9935c6a6ef62135efba2d965b2044175/tests/test_samples/plot_confusion_matrix.png)
+![plot_confusion_matrix](https://github.com/gmihaila/ml_things/blob/master/tests/test_samples/plot_confusion_matrix.png)
 
 ### Text Functions
 
 Text related function that can be useful when working with machine learning.
 
 
-#### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/text_functions.py#L22)
+#### clean_text [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/text_functions.py#L22)
 
 Clean text using various techniques:
 
@@ -170,7 +170,7 @@ Clean text using various techniques:
 
 Web related function that can be useful when working with machine learning.
 
-#### download_from [[source]](https://github.com/gmihaila/ml_things/blob/efb2574a9935c6a6ef62135efba2d965b2044175/src/ml_things/web_related.py#L21)
+#### download_from [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/web_related.py#L21)
 
 Download file from url. It will return the path of the downloaded file:
 
