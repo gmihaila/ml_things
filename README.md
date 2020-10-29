@@ -112,7 +112,7 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
 
 ```python
 >>> from ml_things import plot_array
->>> plot_array([1,3,5,3,7,5,8,10], path='plot_array.png', magnify=0.5, use_title='A Random Plot', start_step=0.3, step_size=0.1, points_values=True)
+>>> plot_array([1,3,5,3,7,5,8,10], path='plot_array.png', magnify=0.1, use_title='A Random Plot', start_step=0.3, step_size=0.1, points_values=True, use_ylabel='Thid', use_xlabel='This')
 ```
 
 ![plot_array](https://github.com/gmihaila/ml_things/raw/master/tests/test_samples/plot_array.png)
@@ -127,8 +127,8 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
 ```python
 >>> from ml_things import plot_dict
 >>> plot_dict({'train_acc':[1,3,5,3,7,5,8,10],
-                'valid_acc':[4,8,9]}, use_linestyles=['-', '--'], magnify=0.5, 
-                start_step=0.3, step_size=0.1,path='plot_dict.png', points_values=[True, False])
+                'valid_acc':[4,8,9]}, use_linestyles=['-', '--'], magnify=0.1, 
+                start_step=0.3, step_size=0.1,path='plot_dict.png', points_values=[True, False], use_title='Title')
 ```
 
 ![plot_dict](https://github.com/gmihaila/ml_things/raw/efb2574a9935c6a6ef62135efba2d965b2044175/tests/test_samples/plot_dict.png)
@@ -142,7 +142,7 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
 
 ```python
 >>> from ml_things import plot_confusion_matrix
->>> plot_confusion_matrix(y_true=[1,0,1,1,0,1], y_pred=[0,1,1,1,0,1], magnify=0.5, use_title='My Confusion Matrix', path='plot_confusion_matrix.png');
+>>> plot_confusion_matrix(y_true=[1,0,1,1,0,1], y_pred=[0,1,1,1,0,1], magnify=0.1, use_title='My Confusion Matrix', path='plot_confusion_matrix.png');
 Confusion matrix, without normalization
 array([[1, 1],
        [1, 3]])
