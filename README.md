@@ -119,7 +119,7 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
 ![plot_array](https://github.com/gmihaila/ml_things/blob/master/tests/test_samples/plot_array.png)
 
 
-#### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L243)
+#### plot_dict [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L275)
 
 Create plot from a single array of values.
 
@@ -135,7 +135,7 @@ All arguments are optimized for quick plots. Change the `magnify` arguments to v
 ![plot_dict](https://github.com/gmihaila/ml_things/blob/master/tests/test_samples/plot_dict.png)
 
 
-#### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L471)
+#### plot_confusion_matrix [[source]](https://github.com/gmihaila/ml_things/blob/master/src/ml_things/plot_functions.py#L529)
 
 This function prints and plots the confusion matrix. Normalization can be applied by setting `normalize=True`.
 
