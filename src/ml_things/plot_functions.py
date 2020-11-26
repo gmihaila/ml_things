@@ -35,7 +35,7 @@ TITLE_FONT_RATIO = 1.8
 def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None, points_values=False, points_round=3,
                use_xlabel=None,
                use_xticks=True, use_ylabel=None, style_sheet='ggplot', use_grid=True, use_linestyle='-',
-               font_size=None, width=3, height=1, magnify=1.2, use_dpi=50, path=None, show_plot=True):
+               font_size=None, width=3, height=1, magnify=0.1, use_dpi=50, path=None, show_plot=True):
     r"""
     Create plot from a single array of values.
 
@@ -274,7 +274,7 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
 
 def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_values=False, points_round=3,
               use_xlabel=None, use_ylabel=None,
-              style_sheet='ggplot', use_grid=True, use_linestyles=None, font_size=None, width=3, height=1, magnify=1.2,
+              style_sheet='ggplot', use_grid=True, use_linestyles=None, font_size=None, width=3, height=1, magnify=0.1,
               use_dpi=50, path=None, show_plot=True):
     r"""
     Create plot from a single array of values.
@@ -527,7 +527,7 @@ def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_val
 
 
 def plot_confusion_matrix(y_true, y_pred, use_title=None, classes='', normalize=False, style_sheet='ggplot',
-                          cmap=plt.cm.Blues, font_size=None, verbose=0, width=3, height=1, magnify=1.2, use_dpi=50,
+                          cmap=plt.cm.Blues, font_size=None, verbose=0, width=3, height=1, magnify=0.1, use_dpi=50,
                           path=None,
                           show_plot=True, **kwargs):
     r"""
