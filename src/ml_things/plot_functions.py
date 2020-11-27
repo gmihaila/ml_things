@@ -66,7 +66,7 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
             inside the function.
 
         points_round (:obj:`int`, `optional`, defaults to :obj:`1`):
-            Round decimal valus for points values. This argument is optional and it has a default value attributed
+            Round decimal values for points values. This argument is optional and it has a default value attributed
             inside the function.
 
         use_xlabel (:obj:`str`, `optional`):
@@ -273,8 +273,8 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
 
 
 def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_values=False, points_round=3,
-              use_xlabel=None, use_ylabel=None,
-              style_sheet='ggplot', use_grid=True, use_linestyles=None, font_size=None, width=3, height=1, magnify=0.1,
+              use_xlabel=None, use_xticks=True, use_ylabel=None,
+              style_sheet='ggplot', use_grid=True, use_linestyles=None, font_size=None, width=3, height=1, magnify=1.2,
               use_dpi=50, path=None, show_plot=True):
     r"""
     Create plot from a single array of values.
@@ -302,12 +302,16 @@ def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_val
             inside the function.
 
         points_round (:obj:`int`, `optional`, defaults to :obj:`1`):
-            Round decimal valus for points values. This argument is optional and it has a default value attributed
+            Round decimal values for points values. This argument is optional and it has a default value attributed
             inside the function.
 
         use_xlabel (:obj:`str`, `optional`):
             Label to use for x-axis value meaning. This argument is optional and it will have a `None` value attributed
             inside the function.
+
+        use_xticks (:obj:`bool`, `optional`, defaults to :obj:`True`):
+            Display x-axis tick values (the values at each point). This argument is optional and it has a default
+            value attributed inside the function.
 
         use_ylabel (:obj:`str`, `optional`):
             Label to use for y-axis value meaning. This argument is optional and it will have a `None` value attributed
@@ -468,6 +472,9 @@ def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_val
 
     # Set horizontal axis name.
     plt.xlabel(use_xlabel, fontdict=font_dict)
+
+    # Use x ticks with steps.
+    plt.xticks(steps) if use_xticks else None
 
     # Set vertical axis name.
     plt.ylabel(use_ylabel, fontdict=font_dict)
