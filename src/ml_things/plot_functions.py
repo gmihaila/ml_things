@@ -273,7 +273,7 @@ def plot_array(array, start_step=0, step_size=1, use_label=None, use_title=None,
 
 
 def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_values=False, points_round=3,
-              use_xlabel=None, use_xticks=True, use_ylabel=None,
+              use_xlabel=None, use_xticks=True, use_rotation_xticks=0, xticks_labels=None, use_ylabel=None,
               style_sheet='ggplot', use_grid=True, use_linestyles=None, font_size=None, width=3, height=1, magnify=1.2,
               use_dpi=50, path=None, show_plot=True):
     r"""
@@ -302,7 +302,7 @@ def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_val
             inside the function.
 
         points_round (:obj:`int`, `optional`, defaults to :obj:`1`):
-            Round decimal values for points values. This argument is optional and it has a default value attributed
+            Round decimal valus for points values. This argument is optional and it has a default value attributed
             inside the function.
 
         use_xlabel (:obj:`str`, `optional`):
@@ -451,14 +451,19 @@ def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_val
     # Single plot figure.
     plt.subplot(1, 2, 1)
 
+    # Use maximum length of steps. In case each arrya has different lengths.
+    max_steps = []
+
     # Plot each array.
     for index, (use_label, array) in enumerate(dict_arrays.items()):
         # Set steps plotted on x-axis - we can use step if 1 unit has different value.
         if start_step > 0:
             # Offset all steps by start_step.
             steps = np.array(range(0, len(array))) * step_size + start_step
+            max_steps = steps if len(max_steps) < len(steps) else max_steps
         else:
             steps = np.array(range(1, len(array) + 1)) * step_size
+            max_steps = steps if len(max_steps) < len(steps) else max_steps
 
         # Plot array as a single line.
         plt.plot(steps, array, linestyle=use_linestyles[index], label=use_label)
@@ -473,8 +478,8 @@ def plot_dict(dict_arrays, start_step=0, step_size=1, use_title=None, points_val
     # Set horizontal axis name.
     plt.xlabel(use_xlabel, fontdict=font_dict)
 
-    # Use x ticks with steps.
-    plt.xticks(steps) if use_xticks else None
+    # Use x ticks with steps or labels.
+    plt.xticks(max_steps, xticks_labels, rotation=use_rotation_xticks) if use_xticks else None
 
     # Set vertical axis name.
     plt.ylabel(use_ylabel, fontdict=font_dict)
