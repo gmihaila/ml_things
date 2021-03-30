@@ -65,12 +65,10 @@ setup(
     install_requires=[
         "scikit-learn",
         "numpy",
-        # for downloading models over HTTPS
         "requests",
-        # progress bars in model download and training scripts
         "tqdm >= 4.27",
-        # fix text UNICODE problems
         "ftfy >= 5.8",
+        "matplotlib>=3.4.0",
     ],
     extras_require=extras,
     python_requires=">=3.6.0",
