@@ -61,33 +61,33 @@ def evaluate_classification(target, prediction):
   from sklearn.metrics import confusion_matrix
   # Run confusion matrix over target and prediction
   tn, fp, fn, tp = confusion_matrix(y_true=target, y_pred=prediction).ravel()
-
+  
   # Compute various metrics
   # Precision: (or Positive predictive value)
   # proportion of predicted positives which are actual positive
-  ppv = tp/(tp+fp)
+  ppv = tp/(tp+fp) if (tp+fp) != 0 else 0
   # Sensitivity, hit rate, recall, or true positive rate
   # proportion of actual positives which are predicted positive
-  tpr = tp/(tp+fn)
+  tpr = tp/(tp+fn) if (tp+fn) != 0 else 0
   # Specificity or true negative rate
   # proportion of actual negative which are predicted negative
-  tnr = tn/(tn+fp)
+  tnr = tn/(tn+fp) if (tn+fp) != 0 else 0
   # Negative predictive value
-  npv = tn/(tn+fn)
+  npv = tn/(tn+fn) if (tn+fn) != 0 else 0
   # Fall out or false positive rate
-  fpr = fp/(fp+tn)
+  fpr = fp/(fp+tn) if (fp+tn) != 0 else 0
   # False negative rate
-  fnr = fn/(tp+fn)
+  fnr = fn/(tp+fn) if (tp+fn) != 0 else 0
   # False discovery rate
-  fdr = fp/(tp+fp)
+  fdr = fp/(tp+fp) if (tp+fp) != 0 else 0
   # F1 score
-  f1 = (2*tp)/(2*tp + fp + fn)
+  f1 = (2*tp)/(2*tp+fp+fn) if (2*tp+fp+fn) != 0 else 0
   # Overall accuracy
-  acc = (tp+tn)/(tp+fp+fn+tn)
-  # BCR: Balanced Classification Rate
-  bcr = 0.5 * (tp / (tp + fn) + tn / (tn + fp))
-  # Balanced Error Rate, or HTER
-  ber = 1 - 0.5 * (tp / (tp + fn) + tn / (tn + fp))
+  acc = (tp+tn)/(tp+fp+fn+tn) if (tp+fp+fn+tn) != 0 else 0
+  # BCR: Balanced Classification Rate: 0.5*(tp/(tp+fn)+tn/(tn+fp))
+  bcr = 0.5*(tpr+tnr)
+  # Balanced Error Rate, or HTER: 1 - 0.5 * (tp/(tp+fn)+tn/(tn+fp))
+  ber = 1-0.5*(tpr+tnr)
 
   # Return metrics as a dictionary.
   return {
