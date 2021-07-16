@@ -18,7 +18,9 @@ If you find any bugs or something doesn't make sense please feel free to open an
 
 That is not all! This library also contains Python code snippets and notebooks that speed up my Machine Learning workflow.
 
-**Note:** *If I reach 100 stars I will release the first official version and add it to the pip install modules!*
+ **Note:** 
+ * <s> *If I reach 100 stars I will release the first official version and add it to the pip install modules!* </s>
+ * **Update:** `July 16, 2021` Thank you all for your support and kidness! As I promissed I will move this repo to pip install modules.
 
 # Table of contents
 
