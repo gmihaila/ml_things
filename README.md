@@ -3,7 +3,7 @@
 [![ml_things](https://circleci.com/gh/gmihaila/ml_things.svg?style=shield)](https://app.circleci.com/pipelines/github/gmihaila/ml_things)
 [![Generic badge](https://img.shields.io/badge/Working-Progress-red.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Generic badge](https://img.shields.io/badge/Updated-Nov_2020-yellow.svg)]()
+[![Generic badge](https://img.shields.io/badge/Updated-July_2021-yellow.svg)]()
 [![Generic badge](https://img.shields.io/badge/Website-Online-green.svg)](https://gmihaila.github.io)
 
 
