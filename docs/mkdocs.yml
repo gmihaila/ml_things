@@ -13,8 +13,6 @@ docs_dir: markdown
 nav:
     - About: index.md
 
-    - Activities: activities/activities.md
-
     - Useful Code: useful/useful.md
 
     - Tutorial Notebooks:
@@ -29,7 +27,6 @@ nav:
 
         - GPT2 Finetune Classification: tutorial_notebooks/gpt2_finetune_classification.md
 
-    - Resume: resume/resume.md
 
 markdown_extensions:
     - markdown.extensions.toc:
