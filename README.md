@@ -4,7 +4,8 @@
 [![Generic badge](https://img.shields.io/badge/Working-Progress-red.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Generic badge](https://img.shields.io/badge/Updated-July_2021-yellow.svg)]()
-[![Generic badge](https://img.shields.io/badge/Website-Online-green.svg)](https://gmihaila.github.io)
+[![Generic badge](https://img.shields.io/badge/Website-Online-green.svg)](https://gmihaila.github.io/ml_things/)
+[![pages-build-deployment](https://github.com/gmihaila/ml_things/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/gmihaila/ml_things/actions/workflows/pages/pages-build-deployment)
 
 
 
