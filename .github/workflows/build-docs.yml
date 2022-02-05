@@ -1,0 +1,20 @@
+name: Build documentation
+on:
+  push:
+    branches:
+      - master
+      - main
+    # Specify which files changes trigger this build.
+    paths:
+      - 'docs/**'
+jobs:
+  # Documentation job.
+  update-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --config-file docs/mkdocs.yml --force
