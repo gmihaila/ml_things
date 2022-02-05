@@ -1,6 +1,11 @@
 # **Machine Learning Things :speech_balloon:**
 
-This is where I put things I find useful that speed up my work with Machine Learning. Ever looked in your old projects to reuse those cool functions you created before? Well, this repo is designed to be a Python Library of functions I created in my previous project that can be reused. I also share some Notebooks Tutorials and Python Code Snippets.
+This is where I put things I find useful that speed up my work with Machine Learning. 
+
+Ever looked in your old projects to reuse those cool functions you created before? 
+
+Well, this repo is designed to be a Python Library of functions I created in my previous project that can be reused. 
+I also share some Notebooks Tutorials and Python Code Snippets.
 
 -------------------------
 

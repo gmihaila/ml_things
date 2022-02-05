@@ -1,10 +1,10 @@
 # Set up navigation: https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
-site_name: George Mihaila
+site_name: Machine Learning Things
 site_url: https://gmihaila.github.io/ml_things
 repo_name: 'Machine Learning Things'
 repo_url: https://github.com/gmihaila/ml_things
 edit_uri: tree/master/docs/src/markdown
-site_description: George's Website along with a Collection of Useful Snippets for Python Machine Learning
+site_description: Machine Learning Things
 copyright: |
   Copyright &copy; 2015 - 2020 <a href="https://github.com/gmihaila"  target="_blank" rel="noopener">George Mihaila</a>
 
