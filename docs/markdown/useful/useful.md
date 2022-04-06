@@ -50,12 +50,12 @@ pip install git+github_url
 ## **Parse Argument**
 Parse arguments given when running a `.py` file.
 ```python
-parser = argparse.ArgumentParser(description='Description')
+parser = argparse.ArgumentParser(description='Description', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--argument', help='Help me.', type=str)
 # parse arguments
 args = parser.parse_args()
 ```
-**Details:** `import argparse` and use `python script.py --argument something` when running script.
+**Details:** `import argparse` and use `python script.py --argument something` when running script. Using `--help` will also show the default values.
 
 
 ## **Create Arguments from Dictionary**
